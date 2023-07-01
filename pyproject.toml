@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "reinforcement-learning-dagster"
+version = "0.1.0"
+description = ""
+authors = ["Rishi Kulkarni <rishi@kulkarni.science>"]
+readme = "README.md"
+packages = [{include = "reinforcement_learning_dagster"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11.0,<3.12"
+dagster = "^1.3.13"
+dagit = "^1.3.13"
+dagster-duckdb = "^0.19.13"
+dagster-duckdb-pandas = "^0.19.13"
+bayesianbandits = "^0.4.3"
+formulaic = "^0.6.3"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "*"
+black = "^23.3.0"
+ipython = "^8.14.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
