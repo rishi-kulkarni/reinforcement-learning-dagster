@@ -3,8 +3,7 @@ name = "reinforcement-learning-dagster"
 version = "0.1.0"
 description = ""
 authors = ["Rishi Kulkarni <rishi@kulkarni.science>"]
-readme = "README.md"
-packages = [{include = "reinforcement_learning_dagster"}]
+packages = [{include = "rl_dagster"}]
 
 [tool.poetry.dependencies]
 python = ">=3.11.0,<3.12"
@@ -23,3 +22,6 @@ ipython = "^8.14.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.dagster]
+python_module = "rl_dagster"
