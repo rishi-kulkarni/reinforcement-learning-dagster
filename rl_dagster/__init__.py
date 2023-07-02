@@ -1,7 +1,13 @@
 from dagster import Definitions, load_assets_from_modules
 
-from rl_dagster.assets import personalized_pricing
+from .assets import personalized_pricing
 
-assets = load_assets_from_modules([personalized_pricing])
+assets = load_assets_from_modules(
+    [personalized_pricing], group_name="personalized_pricing"
+)
 
-defs = Definitions(assets=assets)
+print(assets)
+
+defs = Definitions(
+    assets=assets, sensors=[personalized_pricing.bonus_description_sensor]
+)
