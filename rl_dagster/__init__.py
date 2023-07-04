@@ -1,18 +1,24 @@
 from pathlib import Path
-from dagster import Definitions, load_assets_from_modules
+from dagster import Definitions
+from dagster_duckdb_pandas import DuckDBPandasIOManager
 
-from .assets import personalized_pricing
-
-assets = load_assets_from_modules(
-    [personalized_pricing], group_name="personalized_pricing"
+from .assets.personalized_pricing import (
+    assets,
+    sensors,
+    DuckDBConnection,
+    WallflowerBanditLoader,
 )
 
+
 DATA_DB = Path(__file__).parent / "../data/data.db"
+MODEL = Path(__file__).parent / "../data/wallflower_bonus_bandit.pkl"
 
 defs = Definitions(
     assets=assets,
-    sensors=[personalized_pricing.daily_personalized_pricing_data_sensor],
+    sensors=sensors,
     resources={
-        "pricing_conn": personalized_pricing.DuckDBConnection(filepath=str(DATA_DB))
+        "pricing_conn": DuckDBConnection(filepath=str(DATA_DB)),
+        "duck_db_io": DuckDBPandasIOManager(database=str(DATA_DB)),
+        "bandit_loader": WallflowerBanditLoader(filepath=str(MODEL)),
     },
 )
