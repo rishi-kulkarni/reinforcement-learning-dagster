@@ -37,8 +37,9 @@ from dagster._core.definitions.data_version import (
     extract_data_version_from_entry,
 )
 from dagster_duckdb_pandas import DuckDBPandasIOManager
-from duckdb import connect
 from formulaic import ModelMatrix, ModelSpec, model_matrix
+
+from ._resources import DuckDBConnection
 
 warnings.filterwarnings("ignore", category=ExperimentalWarning)
 
@@ -51,12 +52,10 @@ personalized_pricing_partitions_def = DynamicPartitionsDefinition(
 
 
 @asset
-def context_model_spec() -> Output[ModelSpec]:
+def context_model_spec(pricing_conn: DuckDBConnection) -> Output[ModelSpec]:
     """Generates a design matrix for the features we want to use in our model."""
 
-    conn = connect(str(DATA_DB))
-
-    df = conn.execute("SELECT distinct market, ptype FROM users").df()
+    df = pricing_conn.query("SELECT distinct market, ptype FROM users")
     df.columns = df.columns.str.lower()
 
     formula = "market * ptype"
@@ -72,9 +71,8 @@ def context_model_spec() -> Output[ModelSpec]:
 
 
 @observable_source_asset
-def check_for_new_data():
-    conn = connect(str(DATA_DB))
-    df = conn.execute("SELECT * FROM today_date").df()
+def check_for_new_data(pricing_conn: DuckDBConnection) -> DataVersion:
+    df = pricing_conn.query("SELECT * FROM today_date")
     hashed = hashlib.sha256(df.to_csv().encode("utf-8")).hexdigest()
 
     return DataVersion(hashed)
@@ -125,12 +123,11 @@ def daily_personalized_pricing_data_sensor(context: SensorEvaluationContext):
 )
 def daily_eligible_ips_design_matrix(
     context_model_spec: ModelSpec,
+    pricing_conn: DuckDBConnection,
 ) -> Output[Tuple[pd.Series, pd.Series, np.ndarray]]:
     """Generates a design matrix for the features we want to use in our model."""
 
-    conn = connect(str(DATA_DB))
-
-    df = conn.execute("SELECT * FROM users_eligible_day").df()
+    df = pricing_conn.query("SELECT * FROM users_eligible_day")
     df.columns = df.columns.str.lower()
 
     design_matrix: ModelMatrix[np.float_] = context_model_spec.get_model_matrix(df)
@@ -151,19 +148,18 @@ def daily_eligible_ips_design_matrix(
 )
 def daily_bonus_success_data(
     context_model_spec: ModelSpec,
+    pricing_conn: DuckDBConnection,
 ) -> Output[Tuple[pd.Series, pd.Series, np.ndarray, pd.Series]]:
     """Generates a design matrix for the features we want to use in our model."""
 
-    conn = connect(str(DATA_DB))
-
-    df = conn.execute(
+    df = pricing_conn.query(
         """select bonus_description_today.user_id, start_date, market, ptype,
            bonus_amount
            from bonus_description_today
            join users on bonus_description_today.user_id = users.user_id
            and bonus_description_today.start_date = users.date_eligible
            """
-    ).df()
+    )
     df.columns = df.columns.str.lower()
 
     df["margin"] = [
