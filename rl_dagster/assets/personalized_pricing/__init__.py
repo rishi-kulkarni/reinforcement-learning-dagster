@@ -1,5 +1,5 @@
+import hashlib
 import warnings
-from hashlib import sha256
 from pathlib import Path
 from typing import Tuple, cast
 
@@ -14,23 +14,27 @@ from bayesianbandits import (
     thompson_sampling,
 )
 from dagster import (
-    AssetKey,
     AssetSelection,
     AutoMaterializePolicy,
     Config,
     DataVersion,
+    DefaultSensorStatus,
     DynamicPartitionsDefinition,
     ExperimentalWarning,
-    MultiAssetSensorEvaluationContext,
     Nothing,
     Output,
     RunRequest,
+    SensorEvaluationContext,
     SensorResult,
+    SkipReason,
     asset,
     define_asset_job,
-    multi_asset_sensor,
     observable_source_asset,
-    DefaultSensorStatus,
+    sensor,
+)
+
+from dagster._core.definitions.data_version import (
+    extract_data_version_from_entry,
 )
 from dagster_duckdb_pandas import DuckDBPandasIOManager
 from duckdb import connect
@@ -40,6 +44,10 @@ warnings.filterwarnings("ignore", category=ExperimentalWarning)
 
 DATA_DB = Path(__file__).parent / "../../../data/data.db"
 MODEL = Path(__file__).parent / "../../../data/wallflower_bonus_bandit.pkl"
+
+personalized_pricing_partitions_def = DynamicPartitionsDefinition(
+    name="personalized_pricing"
+)
 
 
 @asset
@@ -64,30 +72,56 @@ def context_model_spec() -> Output[ModelSpec]:
 
 
 @observable_source_asset
-def daily_eligible_ips_source_asset():
+def check_for_new_data():
     conn = connect(str(DATA_DB))
+    df = conn.execute("SELECT * FROM today_date").df()
+    hashed = hashlib.sha256(df.to_csv().encode("utf-8")).hexdigest()
 
-    df = conn.execute("SELECT * FROM users_eligible_day").df()
-
-    hash_sig = sha256(df.to_csv().encode()).hexdigest()
-
-    return DataVersion(hash_sig)
+    return DataVersion(hashed)
 
 
-@observable_source_asset
-def daily_bonus_success_source_asset():
-    conn = connect(str(DATA_DB))
+daily_personalized_pricing_data_job = define_asset_job(
+    "daily_personalized_pricing_data_job",
+    AssetSelection.keys("daily_eligible_ips_design_matrix", "daily_bonus_success_data"),
+    partitions_def=personalized_pricing_partitions_def,
+)
 
-    df = conn.execute("SELECT * FROM bonus_description_today").df()
 
-    hash_sig = sha256(df.to_csv().encode()).hexdigest()
+@sensor(
+    job=daily_personalized_pricing_data_job, default_status=DefaultSensorStatus.RUNNING
+)
+def daily_personalized_pricing_data_sensor(context: SensorEvaluationContext):
+    cursor = context.cursor if context.cursor else None
+    asset_event = context.instance.get_latest_data_version_record(
+        check_for_new_data.key
+    )
+    if asset_event is None:
+        return SkipReason(skip_message="No observations yet.")
+    data_version = extract_data_version_from_entry(asset_event.event_log_entry).value
 
-    return DataVersion(hash_sig)
+    if cursor is None or data_version != cursor:
+        context.log.info("New data detected, advancing cursor")
+
+        current_date = pd.Timestamp.now().floor("S").strftime("%Y-%m-%d %H:%M:%S")
+
+        return SensorResult(
+            [
+                RunRequest(
+                    run_key=f"daily_personalized_pricing_data_{data_version}",
+                    partition_key=current_date,
+                )
+            ],
+            dynamic_partitions_requests=[
+                personalized_pricing_partitions_def.build_add_request([current_date])
+            ],
+            cursor=data_version,
+        )
 
 
 @asset(
-    non_argument_deps={"daily_eligible_ips_source_asset"},
     auto_materialize_policy=AutoMaterializePolicy.eager(),
+    partitions_def=personalized_pricing_partitions_def,
+    non_argument_deps={"check_for_new_data"},
 )
 def daily_eligible_ips_design_matrix(
     context_model_spec: ModelSpec,
@@ -111,8 +145,9 @@ def daily_eligible_ips_design_matrix(
 
 
 @asset(
-    non_argument_deps={"daily_bonus_success_source_asset"},
     auto_materialize_policy=AutoMaterializePolicy.eager(),
+    partitions_def=personalized_pricing_partitions_def,
+    non_argument_deps={"check_for_new_data"},
 )
 def daily_bonus_success_data(
     context_model_spec: ModelSpec,
@@ -171,6 +206,7 @@ class BonusAmountBanditConfig(Config):
 
 
 @asset(
+    partitions_def=personalized_pricing_partitions_def,
     auto_materialize_policy=AutoMaterializePolicy.eager(),
 )
 def bonus_amount_bandit(
@@ -209,14 +245,12 @@ def bonus_amount_bandit(
     return Output(Nothing(), metadata=metadata)
 
 
-bonus_description_partitions_def = DynamicPartitionsDefinition(name="bonus_description")
-
-
 @asset(
     io_manager_def=DuckDBPandasIOManager(database=str(DATA_DB)),
-    partitions_def=bonus_description_partitions_def,
+    partitions_def=personalized_pricing_partitions_def,
     metadata={"partition_expr": "start_date"},
     non_argument_deps={"bonus_amount_bandit"},
+    auto_materialize_policy=AutoMaterializePolicy.eager(),
 )
 def bonus_description(
     daily_eligible_ips_design_matrix: Tuple[pd.Series, pd.Series, np.ndarray],
@@ -251,44 +285,3 @@ def bonus_description(
     }
 
     return Output(df, metadata=metadata)
-
-
-bonus_description_job = define_asset_job(
-    "bonus_description_job",
-    AssetSelection.keys("bonus_description"),
-    partitions_def=bonus_description_partitions_def,
-)
-
-
-@multi_asset_sensor(
-    monitored_assets=[
-        AssetKey("daily_eligible_ips_design_matrix"),
-        AssetKey("bonus_amount_bandit"),
-    ],
-    job=bonus_description_job,
-    default_status=DefaultSensorStatus.RUNNING,
-)
-def bonus_description_sensor(context: MultiAssetSensorEvaluationContext):
-    asset_events = context.latest_materialization_records_by_key().values()
-
-    conn = connect(str(DATA_DB))
-    df = conn.execute("SELECT * FROM today_date").df()
-
-    key = df.iloc[0][0].date()
-
-    if any(asset_events):
-        context.advance_all_cursors()
-
-        return SensorResult(
-            [
-                RunRequest(
-                    run_key=f"bonus_description_{key.strftime('%Y-%m-%d')}",
-                    partition_key=key.strftime("%Y-%m-%d"),
-                )
-            ],
-            dynamic_partitions_requests=[
-                bonus_description_partitions_def.build_add_request(
-                    [key.strftime("%Y-%m-%d")]
-                )
-            ],
-        )

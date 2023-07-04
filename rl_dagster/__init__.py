@@ -9,5 +9,5 @@ assets = load_assets_from_modules(
 print(assets)
 
 defs = Definitions(
-    assets=assets, sensors=[personalized_pricing.bonus_description_sensor]
+    assets=assets, sensors=[personalized_pricing.daily_personalized_pricing_data_sensor]
 )
