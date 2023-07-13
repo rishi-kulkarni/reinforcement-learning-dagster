@@ -4,7 +4,6 @@ from dagster_duckdb_pandas import DuckDBPandasIOManager
 
 from .assets.personalized_pricing import (
     assets,
-    sensors,
     DuckDBConnection,
     WallflowerBanditLoader,
 )
@@ -15,7 +14,6 @@ MODEL = Path(__file__).parent / "../data/wallflower_bonus_bandit.pkl"
 
 defs = Definitions(
     assets=assets,
-    sensors=sensors,
     resources={
         "pricing_conn": DuckDBConnection(filepath=str(DATA_DB)),
         "duck_db_io": DuckDBPandasIOManager(database=str(DATA_DB)),

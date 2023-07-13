@@ -5,6 +5,8 @@ from typing import Tuple, cast
 import numpy as np
 import pandas as pd
 from dagster import (
+    AssetExecutionContext,
+    AssetKey,
     AutoMaterializePolicy,
     Config,
     DataVersion,
@@ -14,6 +16,9 @@ from dagster import (
     Output,
     asset,
     observable_source_asset,
+)
+from dagster._core.definitions.data_version import (
+    extract_data_version_from_entry,
 )
 from formulaic import ModelMatrix, ModelSpec, model_matrix
 
@@ -47,9 +52,26 @@ def context_model_spec(pricing_conn: DuckDBConnection) -> Output[ModelSpec]:
 
 
 @observable_source_asset
-def check_for_new_data(pricing_conn: DuckDBConnection) -> DataVersion:
+def check_for_new_data(
+    context: AssetExecutionContext, pricing_conn: DuckDBConnection
+) -> DataVersion:
     df = pricing_conn.query("SELECT * FROM today_date")
     hashed = hashlib.sha256(df.to_csv().encode("utf-8")).hexdigest()
+
+    last_asset_event = context.instance.get_latest_data_version_record(
+        AssetKey("check_for_new_data")
+    )
+
+    if last_asset_event is not None:
+        last_hashed = extract_data_version_from_entry(
+            last_asset_event.event_log_entry
+        ).value
+        if last_hashed == hashed:
+            return DataVersion(hashed)
+    context.log.info("New data detected, creating new partition")
+
+    current_date = pd.Timestamp.now().floor("S").strftime("%Y-%m-%d %H:%M:%S")
+    context.instance.add_dynamic_partitions("personalized_pricing", [current_date])
 
     return DataVersion(hashed)
 
