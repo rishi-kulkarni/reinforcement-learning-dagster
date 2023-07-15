@@ -34,10 +34,10 @@ class WallflowerBonusBandit(
     policy=thompson_sampling(),
     delayed_reward=True,
 ):
-    arm_0_bonus = Arm(0, reward_function=reward_func)
-    arm_2_bonus = Arm(2, reward_function=reward_func)
-    arm_3_bonus = Arm(3, reward_function=reward_func)
-    arm_4_bonus = Arm(4, reward_function=reward_func)
+    arm_0_coupon = Arm(0, reward_function=reward_func)
+    arm_5_coupon = Arm(5, reward_function=reward_func)
+    arm_10_coupon = Arm(10, reward_function=reward_func)
+    arm_15_coupon = Arm(15, reward_function=reward_func)
 
 
 class WallflowerBanditLoader(ConfigurableResource):

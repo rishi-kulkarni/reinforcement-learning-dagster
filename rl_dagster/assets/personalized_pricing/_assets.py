@@ -1,4 +1,3 @@
-import hashlib
 import warnings
 from typing import Tuple, cast
 
@@ -6,29 +5,29 @@ import numpy as np
 import pandas as pd
 from dagster import (
     AssetExecutionContext,
-    AssetKey,
-    AutoMaterializePolicy,
+    AssetIn,
     Config,
-    DataVersion,
     DynamicPartitionsDefinition,
     ExperimentalWarning,
+    LastPartitionMapping,
     Nothing,
     Output,
     asset,
-    observable_source_asset,
 )
-from dagster._core.definitions.data_version import (
-    extract_data_version_from_entry,
-)
+
 from formulaic import ModelMatrix, ModelSpec, model_matrix
 
 from ._resources import DuckDBConnection, WallflowerBanditLoader
+from ._simulate_margin import simulated_margin
 
 warnings.filterwarnings("ignore", category=ExperimentalWarning)
 
 
-personalized_pricing_partitions_def = DynamicPartitionsDefinition(
-    name="personalized_pricing"
+send_coupons_partitions_def = DynamicPartitionsDefinition(
+    name="send_coupons_partitions",
+)
+update_coupons_model_partitions_def = DynamicPartitionsDefinition(
+    name="update_coupons_model_partitions",
 )
 
 
@@ -36,12 +35,12 @@ personalized_pricing_partitions_def = DynamicPartitionsDefinition(
 def context_model_spec(pricing_conn: DuckDBConnection) -> Output[ModelSpec]:
     """Generates a design matrix for the features we want to use in our model."""
 
-    df = pricing_conn.query("SELECT distinct market, ptype FROM users")
+    df = pricing_conn.query("SELECT distinct geo, device FROM coupon_eligible_users;")
     df.columns = df.columns.str.lower()
 
-    formula = "market * ptype"
+    formula = "1 + geo + device"
 
-    ms = cast(ModelSpec, model_matrix(formula, df).model_spec)
+    ms = cast(ModelSpec, model_matrix(formula, df, ensure_full_rank=False).model_spec)
 
     metadata = {
         "formula": formula,
@@ -51,35 +50,8 @@ def context_model_spec(pricing_conn: DuckDBConnection) -> Output[ModelSpec]:
     return Output(ms, metadata=metadata)
 
 
-@observable_source_asset
-def check_for_new_data(
-    context: AssetExecutionContext, pricing_conn: DuckDBConnection
-) -> DataVersion:
-    df = pricing_conn.query("SELECT * FROM today_date")
-    hashed = hashlib.sha256(df.to_csv().encode("utf-8")).hexdigest()
-
-    last_asset_event = context.instance.get_latest_data_version_record(
-        AssetKey("check_for_new_data")
-    )
-
-    if last_asset_event is not None:
-        last_hashed = extract_data_version_from_entry(
-            last_asset_event.event_log_entry
-        ).value
-        if last_hashed == hashed:
-            return DataVersion(hashed)
-    context.log.info("New data detected, creating new partition")
-
-    current_date = pd.Timestamp.now().floor("S").strftime("%Y-%m-%d %H:%M:%S")
-    context.instance.add_dynamic_partitions("personalized_pricing", [current_date])
-
-    return DataVersion(hashed)
-
-
 @asset(
-    auto_materialize_policy=AutoMaterializePolicy.eager(),
-    partitions_def=personalized_pricing_partitions_def,
-    non_argument_deps={"check_for_new_data"},
+    partitions_def=send_coupons_partitions_def,
 )
 def daily_eligible_ips_design_matrix(
     context_model_spec: ModelSpec,
@@ -87,7 +59,7 @@ def daily_eligible_ips_design_matrix(
 ) -> Output[Tuple[pd.Series, pd.Series, np.ndarray]]:
     """Generates a design matrix for the features we want to use in our model."""
 
-    df = pricing_conn.query("SELECT * FROM users_eligible_day")
+    df = pricing_conn.query("SELECT * FROM users_eligible_today")
     df.columns = df.columns.str.lower()
 
     design_matrix: ModelMatrix[np.float_] = context_model_spec.get_model_matrix(df)
@@ -102,30 +74,25 @@ def daily_eligible_ips_design_matrix(
 
 
 @asset(
-    auto_materialize_policy=AutoMaterializePolicy.eager(),
-    partitions_def=personalized_pricing_partitions_def,
-    non_argument_deps={"check_for_new_data"},
+    partitions_def=update_coupons_model_partitions_def,
 )
-def daily_bonus_success_data(
+def daily_model_update_data(
     context_model_spec: ModelSpec,
     pricing_conn: DuckDBConnection,
 ) -> Output[Tuple[pd.Series, pd.Series, np.ndarray, pd.Series]]:
     """Generates a design matrix for the features we want to use in our model."""
 
     df = pricing_conn.query(
-        """select bonus_description_today.user_id, start_date, market, ptype,
+        """select margins_to_check.user_id, start_date, geo, device,
            bonus_amount
-           from bonus_description_today
-           join users on bonus_description_today.user_id = users.user_id
-           and bonus_description_today.start_date = users.date_eligible
+           from margins_to_check
+           join coupon_eligible_users using (user_id)
            """
     )
     df.columns = df.columns.str.lower()
 
     df["margin"] = [
-        np.random.normal(loc=80, scale=10) - 8 * row.bonus_amount
-        if row.bonus_amount >= 3
-        else 0
+        simulated_margin(row.geo, row.device, row.bonus_amount)
         for row in df.itertuples()
     ]
 
@@ -145,14 +112,17 @@ class BonusAmountBanditConfig(Config):
 
 
 @asset(
-    partitions_def=personalized_pricing_partitions_def,
-    auto_materialize_policy=AutoMaterializePolicy.eager(),
+    ins={
+        "daily_model_update_data": AssetIn(
+            "daily_model_update_data", partition_mapping=LastPartitionMapping()
+        )
+    },
 )
 def bonus_amount_bandit(
-    context,
+    context: AssetExecutionContext,
     config: BonusAmountBanditConfig,
     bandit_loader: WallflowerBanditLoader,
-    daily_bonus_success_data: Tuple[pd.Series, pd.Series, np.ndarray, pd.Series],
+    daily_model_update_data: Tuple[pd.Series, pd.Series, np.ndarray, pd.Series],
 ) -> Output[None]:
     if config.full_refresh:
         context.log.info("Creating new model")
@@ -160,7 +130,7 @@ def bonus_amount_bandit(
     else:
         agent = bandit_loader.load()
 
-    user_ids, dates_eligible, design_matrix, margins = daily_bonus_success_data
+    user_ids, dates_eligible, design_matrix, margins = daily_model_update_data
 
     metadata = {}
 
@@ -185,12 +155,11 @@ def bonus_amount_bandit(
 
 @asset(
     io_manager_key="duck_db_io",
-    partitions_def=personalized_pricing_partitions_def,
+    partitions_def=send_coupons_partitions_def,
     metadata={"partition_expr": "start_date"},
     non_argument_deps={"bonus_amount_bandit"},
-    auto_materialize_policy=AutoMaterializePolicy.eager(),
 )
-def bonus_description(
+def coupon_offers(
     daily_eligible_ips_design_matrix: Tuple[pd.Series, pd.Series, np.ndarray],
     bandit_loader: WallflowerBanditLoader,
 ) -> Output[pd.DataFrame]:
