@@ -1,501 +1,1051 @@
-﻿USER_ID,MARKET,PTYPE,DATE_ELIGIBLE
-2572,BOS-WEST,LPN,"Sunday, July 2, 2023"
-1265,BOS-WEST,CNA,"Sunday, July 2, 2023"
-1492,BOS-WEST,CNA,"Sunday, July 2, 2023"
-7753,BOS-WEST,LPN,"Sunday, July 2, 2023"
-9381,BOS-WEST,LPN,"Sunday, July 2, 2023"
-9939,BOS-WEST,CNA,"Sunday, July 2, 2023"
-8132,BOS-WEST,CNA,"Sunday, July 2, 2023"
-3056,BOS-WEST,LPN,"Sunday, July 2, 2023"
-5315,BOS-WEST,RN,"Sunday, July 2, 2023"
-3811,CLE-1,CNA,"Sunday, July 2, 2023"
-1436,CLE-1,CNA,"Sunday, July 2, 2023"
-718,CLE-1,LPN,"Sunday, July 2, 2023"
-2253,CLE-1,RN,"Sunday, July 2, 2023"
-9453,CLE-1,LPN,"Sunday, July 2, 2023"
-5099,CLE-1,LPN,"Sunday, July 2, 2023"
-8076,CLE-1,RN,"Sunday, July 2, 2023"
-8704,CLE-1,CNA,"Sunday, July 2, 2023"
-6436,CLE-1,CNA,"Sunday, July 2, 2023"
-4608,CLE-1,RN,"Sunday, July 2, 2023"
-9832,PA-1,RN,"Sunday, July 2, 2023"
-7714,PA-1,CNA,"Sunday, July 2, 2023"
-4336,PA-1,LPN,"Sunday, July 2, 2023"
-1246,PA-1,RN,"Sunday, July 2, 2023"
-4382,PA-1,CNA,"Sunday, July 2, 2023"
-9528,PA-1,CNA,"Sunday, July 2, 2023"
-9762,PA-1,CNA,"Sunday, July 2, 2023"
-8080,PA-1,LPN,"Sunday, July 2, 2023"
-7644,PA-1,CNA,"Sunday, July 2, 2023"
-9082,PA-1,CNA,"Sunday, July 2, 2023"
-5930,PHL-1,LPN,"Sunday, July 2, 2023"
-7048,PHL-1,LPN,"Sunday, July 2, 2023"
-9498,PHL-1,CNA,"Sunday, July 2, 2023"
-2754,PHL-1,RN,"Sunday, July 2, 2023"
-7169,PHL-1,CNA,"Sunday, July 2, 2023"
-880,PHL-1,LPN,"Sunday, July 2, 2023"
-5822,PHL-1,RN,"Sunday, July 2, 2023"
-5886,PHL-1,RN,"Sunday, July 2, 2023"
-8617,PHL-1,CNA,"Sunday, July 2, 2023"
-6900,PHL-1,CNA,"Sunday, July 2, 2023"
-4546,PVD-1,CNA,"Sunday, July 2, 2023"
-1880,PVD-1,LPN,"Sunday, July 2, 2023"
-7982,PVD-1,LPN,"Sunday, July 2, 2023"
-243,PVD-1,CNA,"Sunday, July 2, 2023"
-7135,PVD-1,CNA,"Sunday, July 2, 2023"
-5139,PVD-1,RN,"Sunday, July 2, 2023"
-4767,PVD-1,RN,"Sunday, July 2, 2023"
-1831,PVD-1,CNA,"Sunday, July 2, 2023"
-2357,PVD-1,RN,"Sunday, July 2, 2023"
-1686,PVD-1,CNA,"Sunday, July 2, 2023"
-9226,PVD-1,LPN,"Sunday, July 2, 2023"
-3409,BOS-WEST,CNA,"Monday, July 3, 2023"
-2739,BOS-WEST,CNA,"Monday, July 3, 2023"
-1666,BOS-WEST,CNA,"Monday, July 3, 2023"
-2725,BOS-WEST,CNA,"Monday, July 3, 2023"
-573,BOS-WEST,CNA,"Monday, July 3, 2023"
-7950,BOS-WEST,CNA,"Monday, July 3, 2023"
-820,BOS-WEST,CNA,"Monday, July 3, 2023"
-7911,BOS-WEST,LPN,"Monday, July 3, 2023"
-6313,BOS-WEST,RN,"Monday, July 3, 2023"
-6893,CLE-1,CNA,"Monday, July 3, 2023"
-5802,CLE-1,RN,"Monday, July 3, 2023"
-9044,CLE-1,CNA,"Monday, July 3, 2023"
-6395,CLE-1,LPN,"Monday, July 3, 2023"
-94,CLE-1,CNA,"Monday, July 3, 2023"
-3800,CLE-1,CNA,"Monday, July 3, 2023"
-4454,CLE-1,CNA,"Monday, July 3, 2023"
-2693,CLE-1,CNA,"Monday, July 3, 2023"
-1416,CLE-1,CNA,"Monday, July 3, 2023"
-6351,CLE-1,CNA,"Monday, July 3, 2023"
-5182,PA-1,CNA,"Monday, July 3, 2023"
-9325,PA-1,RN,"Monday, July 3, 2023"
-2637,PA-1,CNA,"Monday, July 3, 2023"
-5039,PA-1,RN,"Monday, July 3, 2023"
-3919,PA-1,CNA,"Monday, July 3, 2023"
-2836,PA-1,CNA,"Monday, July 3, 2023"
-4254,PA-1,RN,"Monday, July 3, 2023"
-7803,PA-1,LPN,"Monday, July 3, 2023"
-2729,PA-1,RN,"Monday, July 3, 2023"
-6065,PA-1,CNA,"Monday, July 3, 2023"
-558,PHL-1,RN,"Monday, July 3, 2023"
-1201,PHL-1,CNA,"Monday, July 3, 2023"
-8066,PHL-1,CNA,"Monday, July 3, 2023"
-746,PHL-1,RN,"Monday, July 3, 2023"
-4469,PHL-1,CNA,"Monday, July 3, 2023"
-4058,PHL-1,CNA,"Monday, July 3, 2023"
-2002,PHL-1,CNA,"Monday, July 3, 2023"
-3071,PHL-1,CNA,"Monday, July 3, 2023"
-6480,PHL-1,RN,"Monday, July 3, 2023"
-190,PHL-1,LPN,"Monday, July 3, 2023"
-6023,PVD-1,CNA,"Monday, July 3, 2023"
-7832,PVD-1,RN,"Monday, July 3, 2023"
-2325,PVD-1,CNA,"Monday, July 3, 2023"
-1191,PVD-1,CNA,"Monday, July 3, 2023"
-8214,PVD-1,CNA,"Monday, July 3, 2023"
-4142,PVD-1,RN,"Monday, July 3, 2023"
-8753,PVD-1,CNA,"Monday, July 3, 2023"
-1250,PVD-1,CNA,"Monday, July 3, 2023"
-9916,PVD-1,RN,"Monday, July 3, 2023"
-4069,PVD-1,CNA,"Monday, July 3, 2023"
-6173,PVD-1,RN,"Monday, July 3, 2023"
-5367,BOS-WEST,CNA,"Tuesday, July 4, 2023"
-8384,BOS-WEST,LPN,"Tuesday, July 4, 2023"
-607,BOS-WEST,RN,"Tuesday, July 4, 2023"
-6359,BOS-WEST,RN,"Tuesday, July 4, 2023"
-3641,BOS-WEST,RN,"Tuesday, July 4, 2023"
-1636,BOS-WEST,LPN,"Tuesday, July 4, 2023"
-1019,BOS-WEST,CNA,"Tuesday, July 4, 2023"
-6736,BOS-WEST,LPN,"Tuesday, July 4, 2023"
-698,BOS-WEST,RN,"Tuesday, July 4, 2023"
-1615,CLE-1,CNA,"Tuesday, July 4, 2023"
-4970,CLE-1,CNA,"Tuesday, July 4, 2023"
-3346,CLE-1,CNA,"Tuesday, July 4, 2023"
-4798,CLE-1,CNA,"Tuesday, July 4, 2023"
-9234,CLE-1,LPN,"Tuesday, July 4, 2023"
-8516,CLE-1,CNA,"Tuesday, July 4, 2023"
-2850,CLE-1,RN,"Tuesday, July 4, 2023"
-530,CLE-1,CNA,"Tuesday, July 4, 2023"
-9475,CLE-1,LPN,"Tuesday, July 4, 2023"
-8880,CLE-1,CNA,"Tuesday, July 4, 2023"
-6198,PA-1,LPN,"Tuesday, July 4, 2023"
-2690,PA-1,CNA,"Tuesday, July 4, 2023"
-1766,PA-1,CNA,"Tuesday, July 4, 2023"
-9496,PA-1,CNA,"Tuesday, July 4, 2023"
-7100,PA-1,CNA,"Tuesday, July 4, 2023"
-6002,PA-1,CNA,"Tuesday, July 4, 2023"
-880,PA-1,CNA,"Tuesday, July 4, 2023"
-4656,PA-1,RN,"Tuesday, July 4, 2023"
-8059,PA-1,CNA,"Tuesday, July 4, 2023"
-720,PA-1,CNA,"Tuesday, July 4, 2023"
-2610,PHL-1,LPN,"Tuesday, July 4, 2023"
-1727,PHL-1,CNA,"Tuesday, July 4, 2023"
-2481,PHL-1,LPN,"Tuesday, July 4, 2023"
-862,PHL-1,LPN,"Tuesday, July 4, 2023"
-4301,PHL-1,CNA,"Tuesday, July 4, 2023"
-3062,PHL-1,CNA,"Tuesday, July 4, 2023"
-7780,PHL-1,CNA,"Tuesday, July 4, 2023"
-1447,PHL-1,CNA,"Tuesday, July 4, 2023"
-5122,PHL-1,LPN,"Tuesday, July 4, 2023"
-5602,PHL-1,CNA,"Tuesday, July 4, 2023"
-724,PVD-1,RN,"Tuesday, July 4, 2023"
-7232,PVD-1,RN,"Tuesday, July 4, 2023"
-6470,PVD-1,CNA,"Tuesday, July 4, 2023"
-7623,PVD-1,CNA,"Tuesday, July 4, 2023"
-3579,PVD-1,RN,"Tuesday, July 4, 2023"
-1554,PVD-1,LPN,"Tuesday, July 4, 2023"
-7362,PVD-1,CNA,"Tuesday, July 4, 2023"
-7361,PVD-1,LPN,"Tuesday, July 4, 2023"
-8758,PVD-1,RN,"Tuesday, July 4, 2023"
-4385,PVD-1,CNA,"Tuesday, July 4, 2023"
-6944,PVD-1,CNA,"Tuesday, July 4, 2023"
-4898,BOS-WEST,RN,"Wednesday, July 5, 2023"
-5260,BOS-WEST,CNA,"Wednesday, July 5, 2023"
-9712,BOS-WEST,CNA,"Wednesday, July 5, 2023"
-6884,BOS-WEST,CNA,"Wednesday, July 5, 2023"
-3461,BOS-WEST,RN,"Wednesday, July 5, 2023"
-3009,BOS-WEST,RN,"Wednesday, July 5, 2023"
-2450,BOS-WEST,CNA,"Wednesday, July 5, 2023"
-6727,BOS-WEST,CNA,"Wednesday, July 5, 2023"
-3072,BOS-WEST,RN,"Wednesday, July 5, 2023"
-2873,CLE-1,CNA,"Wednesday, July 5, 2023"
-7356,CLE-1,RN,"Wednesday, July 5, 2023"
-7816,CLE-1,CNA,"Wednesday, July 5, 2023"
-4539,CLE-1,LPN,"Wednesday, July 5, 2023"
-5187,CLE-1,RN,"Wednesday, July 5, 2023"
-577,CLE-1,LPN,"Wednesday, July 5, 2023"
-5315,CLE-1,LPN,"Wednesday, July 5, 2023"
-1799,CLE-1,LPN,"Wednesday, July 5, 2023"
-2354,CLE-1,LPN,"Wednesday, July 5, 2023"
-5570,CLE-1,CNA,"Wednesday, July 5, 2023"
-4593,PA-1,CNA,"Wednesday, July 5, 2023"
-3684,PA-1,CNA,"Wednesday, July 5, 2023"
-2406,PA-1,CNA,"Wednesday, July 5, 2023"
-3946,PA-1,CNA,"Wednesday, July 5, 2023"
-7407,PA-1,CNA,"Wednesday, July 5, 2023"
-4424,PA-1,LPN,"Wednesday, July 5, 2023"
-387,PA-1,RN,"Wednesday, July 5, 2023"
-1996,PA-1,CNA,"Wednesday, July 5, 2023"
-4894,PA-1,CNA,"Wednesday, July 5, 2023"
-7053,PA-1,CNA,"Wednesday, July 5, 2023"
-9196,PHL-1,CNA,"Wednesday, July 5, 2023"
-8024,PHL-1,CNA,"Wednesday, July 5, 2023"
-5866,PHL-1,CNA,"Wednesday, July 5, 2023"
-3627,PHL-1,CNA,"Wednesday, July 5, 2023"
-9252,PHL-1,CNA,"Wednesday, July 5, 2023"
-6000,PHL-1,RN,"Wednesday, July 5, 2023"
-8198,PHL-1,CNA,"Wednesday, July 5, 2023"
-8660,PHL-1,LPN,"Wednesday, July 5, 2023"
-7216,PHL-1,CNA,"Wednesday, July 5, 2023"
-558,PHL-1,CNA,"Wednesday, July 5, 2023"
-3404,PVD-1,CNA,"Wednesday, July 5, 2023"
-2558,PVD-1,CNA,"Wednesday, July 5, 2023"
-3503,PVD-1,CNA,"Wednesday, July 5, 2023"
-8517,PVD-1,RN,"Wednesday, July 5, 2023"
-9980,PVD-1,CNA,"Wednesday, July 5, 2023"
-3528,PVD-1,RN,"Wednesday, July 5, 2023"
-252,PVD-1,LPN,"Wednesday, July 5, 2023"
-6844,PVD-1,CNA,"Wednesday, July 5, 2023"
-6259,PVD-1,CNA,"Wednesday, July 5, 2023"
-7785,PVD-1,RN,"Wednesday, July 5, 2023"
-6264,PVD-1,RN,"Wednesday, July 5, 2023"
-9907,BOS-WEST,CNA,"Thursday, July 6, 2023"
-7638,BOS-WEST,RN,"Thursday, July 6, 2023"
-6935,BOS-WEST,CNA,"Thursday, July 6, 2023"
-580,BOS-WEST,RN,"Thursday, July 6, 2023"
-5994,BOS-WEST,CNA,"Thursday, July 6, 2023"
-4166,BOS-WEST,RN,"Thursday, July 6, 2023"
-2538,BOS-WEST,CNA,"Thursday, July 6, 2023"
-2923,BOS-WEST,CNA,"Thursday, July 6, 2023"
-1770,BOS-WEST,CNA,"Thursday, July 6, 2023"
-1858,CLE-1,LPN,"Thursday, July 6, 2023"
-5562,CLE-1,CNA,"Thursday, July 6, 2023"
-833,CLE-1,CNA,"Thursday, July 6, 2023"
-9389,CLE-1,RN,"Thursday, July 6, 2023"
-7128,CLE-1,CNA,"Thursday, July 6, 2023"
-7739,CLE-1,RN,"Thursday, July 6, 2023"
-639,CLE-1,RN,"Thursday, July 6, 2023"
-7203,CLE-1,CNA,"Thursday, July 6, 2023"
-4994,CLE-1,LPN,"Thursday, July 6, 2023"
-1402,CLE-1,CNA,"Thursday, July 6, 2023"
-1291,PA-1,CNA,"Thursday, July 6, 2023"
-4666,PA-1,CNA,"Thursday, July 6, 2023"
-191,PA-1,CNA,"Thursday, July 6, 2023"
-3322,PA-1,RN,"Thursday, July 6, 2023"
-8879,PA-1,CNA,"Thursday, July 6, 2023"
-9364,PA-1,CNA,"Thursday, July 6, 2023"
-3776,PA-1,CNA,"Thursday, July 6, 2023"
-9183,PA-1,CNA,"Thursday, July 6, 2023"
-7561,PA-1,CNA,"Thursday, July 6, 2023"
-1588,PA-1,CNA,"Thursday, July 6, 2023"
-5163,PHL-1,CNA,"Thursday, July 6, 2023"
-4210,PHL-1,LPN,"Thursday, July 6, 2023"
-3429,PHL-1,CNA,"Thursday, July 6, 2023"
-508,PHL-1,RN,"Thursday, July 6, 2023"
-2481,PHL-1,CNA,"Thursday, July 6, 2023"
-9485,PHL-1,CNA,"Thursday, July 6, 2023"
-7018,PHL-1,CNA,"Thursday, July 6, 2023"
-5070,PHL-1,LPN,"Thursday, July 6, 2023"
-2775,PHL-1,RN,"Thursday, July 6, 2023"
-2948,PHL-1,CNA,"Thursday, July 6, 2023"
-6410,PVD-1,RN,"Thursday, July 6, 2023"
-4802,PVD-1,CNA,"Thursday, July 6, 2023"
-4254,PVD-1,CNA,"Thursday, July 6, 2023"
-3688,PVD-1,CNA,"Thursday, July 6, 2023"
-8850,PVD-1,CNA,"Thursday, July 6, 2023"
-709,PVD-1,RN,"Thursday, July 6, 2023"
-5065,PVD-1,CNA,"Thursday, July 6, 2023"
-2393,PVD-1,RN,"Thursday, July 6, 2023"
-1417,PVD-1,CNA,"Thursday, July 6, 2023"
-4837,PVD-1,LPN,"Thursday, July 6, 2023"
-9138,PVD-1,LPN,"Thursday, July 6, 2023"
-1522,BOS-WEST,CNA,"Friday, July 7, 2023"
-4267,BOS-WEST,CNA,"Friday, July 7, 2023"
-8881,BOS-WEST,CNA,"Friday, July 7, 2023"
-6715,BOS-WEST,RN,"Friday, July 7, 2023"
-4074,BOS-WEST,CNA,"Friday, July 7, 2023"
-4174,BOS-WEST,CNA,"Friday, July 7, 2023"
-2427,BOS-WEST,RN,"Friday, July 7, 2023"
-3334,BOS-WEST,RN,"Friday, July 7, 2023"
-7483,BOS-WEST,CNA,"Friday, July 7, 2023"
-2653,CLE-1,CNA,"Friday, July 7, 2023"
-2353,CLE-1,CNA,"Friday, July 7, 2023"
-7940,CLE-1,CNA,"Friday, July 7, 2023"
-7472,CLE-1,RN,"Friday, July 7, 2023"
-4981,CLE-1,LPN,"Friday, July 7, 2023"
-9699,CLE-1,LPN,"Friday, July 7, 2023"
-8871,CLE-1,RN,"Friday, July 7, 2023"
-7124,CLE-1,CNA,"Friday, July 7, 2023"
-4251,CLE-1,CNA,"Friday, July 7, 2023"
-7321,CLE-1,LPN,"Friday, July 7, 2023"
-9207,PA-1,CNA,"Friday, July 7, 2023"
-3158,PA-1,CNA,"Friday, July 7, 2023"
-6054,PA-1,RN,"Friday, July 7, 2023"
-5386,PA-1,CNA,"Friday, July 7, 2023"
-2090,PA-1,CNA,"Friday, July 7, 2023"
-6965,PA-1,RN,"Friday, July 7, 2023"
-5552,PA-1,LPN,"Friday, July 7, 2023"
-6923,PA-1,CNA,"Friday, July 7, 2023"
-7547,PA-1,CNA,"Friday, July 7, 2023"
-1754,PA-1,CNA,"Friday, July 7, 2023"
-4311,PHL-1,CNA,"Friday, July 7, 2023"
-4660,PHL-1,CNA,"Friday, July 7, 2023"
-6597,PHL-1,RN,"Friday, July 7, 2023"
-4587,PHL-1,LPN,"Friday, July 7, 2023"
-3760,PHL-1,CNA,"Friday, July 7, 2023"
-1540,PHL-1,CNA,"Friday, July 7, 2023"
-3628,PHL-1,CNA,"Friday, July 7, 2023"
-9574,PHL-1,RN,"Friday, July 7, 2023"
-3281,PHL-1,CNA,"Friday, July 7, 2023"
-5797,PHL-1,CNA,"Friday, July 7, 2023"
-8938,PVD-1,CNA,"Friday, July 7, 2023"
-5131,PVD-1,CNA,"Friday, July 7, 2023"
-5310,PVD-1,RN,"Friday, July 7, 2023"
-261,PVD-1,RN,"Friday, July 7, 2023"
-5015,PVD-1,LPN,"Friday, July 7, 2023"
-1020,PVD-1,RN,"Friday, July 7, 2023"
-8392,PVD-1,CNA,"Friday, July 7, 2023"
-5118,PVD-1,CNA,"Friday, July 7, 2023"
-8203,PVD-1,CNA,"Friday, July 7, 2023"
-361,PVD-1,CNA,"Friday, July 7, 2023"
-7139,PVD-1,CNA,"Friday, July 7, 2023"
-1583,BOS-WEST,LPN,"Saturday, July 8, 2023"
-6226,BOS-WEST,CNA,"Saturday, July 8, 2023"
-9192,BOS-WEST,CNA,"Saturday, July 8, 2023"
-1495,BOS-WEST,LPN,"Saturday, July 8, 2023"
-2356,BOS-WEST,RN,"Saturday, July 8, 2023"
-8549,BOS-WEST,LPN,"Saturday, July 8, 2023"
-3615,BOS-WEST,LPN,"Saturday, July 8, 2023"
-1926,BOS-WEST,CNA,"Saturday, July 8, 2023"
-106,BOS-WEST,CNA,"Saturday, July 8, 2023"
-577,CLE-1,CNA,"Saturday, July 8, 2023"
-445,CLE-1,CNA,"Saturday, July 8, 2023"
-5678,CLE-1,CNA,"Saturday, July 8, 2023"
-2757,CLE-1,CNA,"Saturday, July 8, 2023"
-6315,CLE-1,RN,"Saturday, July 8, 2023"
-1023,CLE-1,CNA,"Saturday, July 8, 2023"
-5903,CLE-1,CNA,"Saturday, July 8, 2023"
-3222,CLE-1,CNA,"Saturday, July 8, 2023"
-1683,CLE-1,CNA,"Saturday, July 8, 2023"
-8281,CLE-1,LPN,"Saturday, July 8, 2023"
-4227,PA-1,RN,"Saturday, July 8, 2023"
-1062,PA-1,LPN,"Saturday, July 8, 2023"
-9493,PA-1,RN,"Saturday, July 8, 2023"
-7210,PA-1,LPN,"Saturday, July 8, 2023"
-2103,PA-1,CNA,"Saturday, July 8, 2023"
-2851,PA-1,LPN,"Saturday, July 8, 2023"
-3243,PA-1,LPN,"Saturday, July 8, 2023"
-8227,PA-1,CNA,"Saturday, July 8, 2023"
-2005,PA-1,LPN,"Saturday, July 8, 2023"
-6016,PA-1,LPN,"Saturday, July 8, 2023"
-2967,PHL-1,LPN,"Saturday, July 8, 2023"
-9639,PHL-1,CNA,"Saturday, July 8, 2023"
-3140,PHL-1,LPN,"Saturday, July 8, 2023"
-8589,PHL-1,RN,"Saturday, July 8, 2023"
-2551,PHL-1,CNA,"Saturday, July 8, 2023"
-6734,PHL-1,CNA,"Saturday, July 8, 2023"
-9683,PHL-1,RN,"Saturday, July 8, 2023"
-4320,PHL-1,LPN,"Saturday, July 8, 2023"
-3245,PHL-1,CNA,"Saturday, July 8, 2023"
-3069,PHL-1,CNA,"Saturday, July 8, 2023"
-6958,PVD-1,CNA,"Saturday, July 8, 2023"
-6638,PVD-1,RN,"Saturday, July 8, 2023"
-4961,PVD-1,LPN,"Saturday, July 8, 2023"
-2061,PVD-1,CNA,"Saturday, July 8, 2023"
-6266,PVD-1,RN,"Saturday, July 8, 2023"
-606,PVD-1,CNA,"Saturday, July 8, 2023"
-3282,PVD-1,CNA,"Saturday, July 8, 2023"
-3408,PVD-1,LPN,"Saturday, July 8, 2023"
-1734,PVD-1,RN,"Saturday, July 8, 2023"
-5700,PVD-1,RN,"Saturday, July 8, 2023"
-3612,PVD-1,RN,"Saturday, July 8, 2023"
-2645,BOS-WEST,RN,"Sunday, July 9, 2023"
-2711,BOS-WEST,LPN,"Sunday, July 9, 2023"
-2593,BOS-WEST,LPN,"Sunday, July 9, 2023"
-3147,BOS-WEST,RN,"Sunday, July 9, 2023"
-5012,BOS-WEST,CNA,"Sunday, July 9, 2023"
-5199,BOS-WEST,CNA,"Sunday, July 9, 2023"
-4220,BOS-WEST,CNA,"Sunday, July 9, 2023"
-4494,BOS-WEST,CNA,"Sunday, July 9, 2023"
-8839,BOS-WEST,LPN,"Sunday, July 9, 2023"
-2399,CLE-1,LPN,"Sunday, July 9, 2023"
-882,CLE-1,CNA,"Sunday, July 9, 2023"
-4617,CLE-1,CNA,"Sunday, July 9, 2023"
-2953,CLE-1,RN,"Sunday, July 9, 2023"
-9812,CLE-1,CNA,"Sunday, July 9, 2023"
-6259,CLE-1,CNA,"Sunday, July 9, 2023"
-2301,CLE-1,CNA,"Sunday, July 9, 2023"
-1852,CLE-1,CNA,"Sunday, July 9, 2023"
-4581,CLE-1,CNA,"Sunday, July 9, 2023"
-3717,CLE-1,LPN,"Sunday, July 9, 2023"
-6448,PA-1,CNA,"Sunday, July 9, 2023"
-9554,PA-1,CNA,"Sunday, July 9, 2023"
-8874,PA-1,RN,"Sunday, July 9, 2023"
-1993,PA-1,LPN,"Sunday, July 9, 2023"
-9727,PA-1,RN,"Sunday, July 9, 2023"
-5977,PA-1,CNA,"Sunday, July 9, 2023"
-4146,PA-1,CNA,"Sunday, July 9, 2023"
-8992,PA-1,CNA,"Sunday, July 9, 2023"
-859,PA-1,CNA,"Sunday, July 9, 2023"
-424,PA-1,LPN,"Sunday, July 9, 2023"
-1119,PHL-1,CNA,"Sunday, July 9, 2023"
-3150,PHL-1,CNA,"Sunday, July 9, 2023"
-7852,PHL-1,CNA,"Sunday, July 9, 2023"
-6415,PHL-1,LPN,"Sunday, July 9, 2023"
-2357,PHL-1,CNA,"Sunday, July 9, 2023"
-2988,PHL-1,CNA,"Sunday, July 9, 2023"
-9114,PHL-1,RN,"Sunday, July 9, 2023"
-3547,PHL-1,CNA,"Sunday, July 9, 2023"
-8730,PHL-1,CNA,"Sunday, July 9, 2023"
-5797,PHL-1,CNA,"Sunday, July 9, 2023"
-9060,PVD-1,CNA,"Sunday, July 9, 2023"
-6174,PVD-1,RN,"Sunday, July 9, 2023"
-2128,PVD-1,RN,"Sunday, July 9, 2023"
-6933,PVD-1,RN,"Sunday, July 9, 2023"
-7624,PVD-1,CNA,"Sunday, July 9, 2023"
-2089,PVD-1,CNA,"Sunday, July 9, 2023"
-4108,PVD-1,CNA,"Sunday, July 9, 2023"
-5793,PVD-1,CNA,"Sunday, July 9, 2023"
-6262,PVD-1,LPN,"Sunday, July 9, 2023"
-8903,PVD-1,CNA,"Sunday, July 9, 2023"
-7497,PVD-1,CNA,"Sunday, July 9, 2023"
-9226,BOS-WEST,CNA,"Monday, July 10, 2023"
-8260,BOS-WEST,CNA,"Monday, July 10, 2023"
-1879,BOS-WEST,RN,"Monday, July 10, 2023"
-4235,BOS-WEST,CNA,"Monday, July 10, 2023"
-9265,BOS-WEST,CNA,"Monday, July 10, 2023"
-9577,BOS-WEST,CNA,"Monday, July 10, 2023"
-442,BOS-WEST,LPN,"Monday, July 10, 2023"
-97,BOS-WEST,LPN,"Monday, July 10, 2023"
-3220,BOS-WEST,CNA,"Monday, July 10, 2023"
-6041,CLE-1,LPN,"Monday, July 10, 2023"
-8789,CLE-1,CNA,"Monday, July 10, 2023"
-7059,CLE-1,LPN,"Monday, July 10, 2023"
-9578,CLE-1,LPN,"Monday, July 10, 2023"
-8165,CLE-1,CNA,"Monday, July 10, 2023"
-4985,CLE-1,CNA,"Monday, July 10, 2023"
-3824,CLE-1,CNA,"Monday, July 10, 2023"
-9186,CLE-1,CNA,"Monday, July 10, 2023"
-647,CLE-1,LPN,"Monday, July 10, 2023"
-4209,CLE-1,RN,"Monday, July 10, 2023"
-2380,PA-1,CNA,"Monday, July 10, 2023"
-4650,PA-1,CNA,"Monday, July 10, 2023"
-1564,PA-1,CNA,"Monday, July 10, 2023"
-8614,PA-1,LPN,"Monday, July 10, 2023"
-7535,PA-1,CNA,"Monday, July 10, 2023"
-4502,PA-1,CNA,"Monday, July 10, 2023"
-8118,PA-1,CNA,"Monday, July 10, 2023"
-7764,PA-1,CNA,"Monday, July 10, 2023"
-4170,PA-1,CNA,"Monday, July 10, 2023"
-5628,PA-1,CNA,"Monday, July 10, 2023"
-9124,PHL-1,LPN,"Monday, July 10, 2023"
-8591,PHL-1,LPN,"Monday, July 10, 2023"
-380,PHL-1,CNA,"Monday, July 10, 2023"
-9485,PHL-1,LPN,"Monday, July 10, 2023"
-8992,PHL-1,LPN,"Monday, July 10, 2023"
-6038,PHL-1,LPN,"Monday, July 10, 2023"
-4583,PHL-1,CNA,"Monday, July 10, 2023"
-1259,PHL-1,CNA,"Monday, July 10, 2023"
-9243,PHL-1,LPN,"Monday, July 10, 2023"
-5634,PHL-1,RN,"Monday, July 10, 2023"
-1613,PVD-1,LPN,"Monday, July 10, 2023"
-620,PVD-1,CNA,"Monday, July 10, 2023"
-9044,PVD-1,LPN,"Monday, July 10, 2023"
-5853,PVD-1,RN,"Monday, July 10, 2023"
-2876,PVD-1,LPN,"Monday, July 10, 2023"
-8164,PVD-1,CNA,"Monday, July 10, 2023"
-7724,PVD-1,CNA,"Monday, July 10, 2023"
-5788,PVD-1,CNA,"Monday, July 10, 2023"
-6651,PVD-1,RN,"Monday, July 10, 2023"
-1803,PVD-1,CNA,"Monday, July 10, 2023"
-8678,PVD-1,LPN,"Monday, July 10, 2023"
-387,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-2127,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-7142,BOS-WEST,RN,"Tuesday, July 11, 2023"
-1988,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-9375,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-8287,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-1922,BOS-WEST,RN,"Tuesday, July 11, 2023"
-7015,BOS-WEST,RN,"Tuesday, July 11, 2023"
-2759,BOS-WEST,CNA,"Tuesday, July 11, 2023"
-6771,CLE-1,LPN,"Tuesday, July 11, 2023"
-8012,CLE-1,CNA,"Tuesday, July 11, 2023"
-7103,CLE-1,CNA,"Tuesday, July 11, 2023"
-7083,CLE-1,CNA,"Tuesday, July 11, 2023"
-1016,CLE-1,LPN,"Tuesday, July 11, 2023"
-4069,CLE-1,LPN,"Tuesday, July 11, 2023"
-8,CLE-1,LPN,"Tuesday, July 11, 2023"
-6657,CLE-1,CNA,"Tuesday, July 11, 2023"
-9683,CLE-1,CNA,"Tuesday, July 11, 2023"
-1969,CLE-1,CNA,"Tuesday, July 11, 2023"
-7240,PA-1,CNA,"Tuesday, July 11, 2023"
-9046,PA-1,CNA,"Tuesday, July 11, 2023"
-2336,PA-1,LPN,"Tuesday, July 11, 2023"
-8653,PA-1,LPN,"Tuesday, July 11, 2023"
-7887,PA-1,CNA,"Tuesday, July 11, 2023"
-9787,PA-1,RN,"Tuesday, July 11, 2023"
-2139,PA-1,CNA,"Tuesday, July 11, 2023"
-3508,PA-1,CNA,"Tuesday, July 11, 2023"
-3739,PA-1,LPN,"Tuesday, July 11, 2023"
-6668,PA-1,RN,"Tuesday, July 11, 2023"
-3130,PHL-1,LPN,"Tuesday, July 11, 2023"
-2451,PHL-1,RN,"Tuesday, July 11, 2023"
-4347,PHL-1,CNA,"Tuesday, July 11, 2023"
-9229,PHL-1,CNA,"Tuesday, July 11, 2023"
-284,PHL-1,CNA,"Tuesday, July 11, 2023"
-3653,PHL-1,RN,"Tuesday, July 11, 2023"
-5201,PHL-1,CNA,"Tuesday, July 11, 2023"
-4753,PHL-1,CNA,"Tuesday, July 11, 2023"
-2732,PHL-1,CNA,"Tuesday, July 11, 2023"
-9066,PHL-1,RN,"Tuesday, July 11, 2023"
-3871,PVD-1,RN,"Tuesday, July 11, 2023"
-8905,PVD-1,LPN,"Tuesday, July 11, 2023"
-1709,PVD-1,LPN,"Tuesday, July 11, 2023"
-5069,PVD-1,LPN,"Tuesday, July 11, 2023"
-5007,PVD-1,RN,"Tuesday, July 11, 2023"
-4835,PVD-1,RN,"Tuesday, July 11, 2023"
-6717,PVD-1,CNA,"Tuesday, July 11, 2023"
-6786,PVD-1,LPN,"Tuesday, July 11, 2023"
-3511,PVD-1,CNA,"Tuesday, July 11, 2023"
-1691,PVD-1,CNA,"Tuesday, July 11, 2023"
-5520,PVD-1,CNA,"Tuesday, July 11, 2023"
+USER_ID,GEO,DEVICE,DATE_ELIGIBLE
+538,Chicago,New iPhone,2023-07-01
+173,Indianapolis,Old iPhone,2023-07-01
+512,Indianapolis,Android,2023-07-01
+957,New York City,Old iPhone,2023-07-01
+595,Chicago,Android,2023-07-01
+535,Greater Boston,Old iPhone,2023-07-01
+296,Greater Boston,Android,2023-07-01
+650,Chicago,Android,2023-07-01
+641,Bay Area,Old iPhone,2023-07-01
+822,Bay Area,Old iPhone,2023-07-01
+443,Indianapolis,New iPhone,2023-07-01
+253,Chicago,Android,2023-07-01
+384,New York City,New iPhone,2023-07-01
+437,Greater Boston,New iPhone,2023-07-01
+1033,Albuquerque,Old iPhone,2023-07-01
+618,Indianapolis,Old iPhone,2023-07-01
+166,Greater Boston,Android,2023-07-01
+112,New York City,Android,2023-07-01
+184,Bay Area,New iPhone,2023-07-01
+668,Greater Boston,Android,2023-07-01
+695,Greater Boston,Android,2023-07-01
+477,Albuquerque,New iPhone,2023-07-01
+463,New York City,Android,2023-07-01
+528,Chicago,New iPhone,2023-07-01
+574,Chicago,New iPhone,2023-07-01
+311,Indianapolis,Android,2023-07-01
+190,Bay Area,Android,2023-07-01
+734,Greater Boston,New iPhone,2023-07-01
+330,New York City,New iPhone,2023-07-01
+1042,Albuquerque,Old iPhone,2023-07-01
+104,Albuquerque,Old iPhone,2023-07-01
+368,Chicago,New iPhone,2023-07-01
+31,Bay Area,New iPhone,2023-07-01
+975,Chicago,New iPhone,2023-07-01
+412,Chicago,Old iPhone,2023-07-01
+149,Indianapolis,Android,2023-07-01
+404,Indianapolis,New iPhone,2023-07-01
+395,Bay Area,New iPhone,2023-07-01
+42,Albuquerque,New iPhone,2023-07-01
+529,Chicago,New iPhone,2023-07-01
+271,Indianapolis,Android,2023-07-01
+571,New York City,New iPhone,2023-07-01
+980,Albuquerque,Android,2023-07-01
+783,Albuquerque,Old iPhone,2023-07-01
+200,Albuquerque,Old iPhone,2023-07-01
+182,Greater Boston,New iPhone,2023-07-01
+207,Albuquerque,Old iPhone,2023-07-01
+418,Greater Boston,New iPhone,2023-07-01
+279,Albuquerque,New iPhone,2023-07-01
+998,Bay Area,Old iPhone,2023-07-01
+971,Chicago,Old iPhone,2023-07-01
+924,Bay Area,Old iPhone,2023-07-01
+873,New York City,New iPhone,2023-07-01
+968,Bay Area,New iPhone,2023-07-01
+799,New York City,Old iPhone,2023-07-01
+898,Bay Area,New iPhone,2023-07-01
+30,Indianapolis,Old iPhone,2023-07-01
+895,Indianapolis,Old iPhone,2023-07-01
+223,Albuquerque,New iPhone,2023-07-01
+231,Bay Area,Old iPhone,2023-07-01
+1031,Bay Area,Android,2023-07-01
+863,Bay Area,Android,2023-07-01
+424,Bay Area,Android,2023-07-01
+721,New York City,Android,2023-07-01
+814,Bay Area,Android,2023-07-01
+276,Greater Boston,Android,2023-07-01
+786,Chicago,Old iPhone,2023-07-01
+1011,Indianapolis,Old iPhone,2023-07-01
+260,New York City,Android,2023-07-02
+991,Indianapolis,New iPhone,2023-07-02
+580,Bay Area,Android,2023-07-02
+779,Indianapolis,New iPhone,2023-07-02
+854,New York City,New iPhone,2023-07-02
+339,Bay Area,Android,2023-07-02
+826,New York City,New iPhone,2023-07-02
+287,Indianapolis,Android,2023-07-02
+724,Chicago,New iPhone,2023-07-02
+943,Bay Area,Old iPhone,2023-07-02
+139,Indianapolis,Android,2023-07-02
+866,Bay Area,Android,2023-07-02
+858,Bay Area,Android,2023-07-02
+659,Chicago,New iPhone,2023-07-02
+536,New York City,Old iPhone,2023-07-02
+577,Bay Area,New iPhone,2023-07-02
+78,Indianapolis,New iPhone,2023-07-02
+787,Bay Area,Old iPhone,2023-07-02
+743,Albuquerque,Android,2023-07-02
+472,Bay Area,Old iPhone,2023-07-02
+916,Chicago,Old iPhone,2023-07-02
+386,New York City,Old iPhone,2023-07-02
+122,Indianapolis,New iPhone,2023-07-02
+314,Greater Boston,New iPhone,2023-07-02
+366,Indianapolis,Old iPhone,2023-07-02
+663,Bay Area,Old iPhone,2023-07-02
+198,Indianapolis,Old iPhone,2023-07-02
+573,Chicago,New iPhone,2023-07-02
+1030,Albuquerque,Old iPhone,2023-07-02
+637,Albuquerque,Old iPhone,2023-07-02
+510,Bay Area,New iPhone,2023-07-02
+341,Albuquerque,New iPhone,2023-07-02
+343,Albuquerque,Android,2023-07-02
+16,Bay Area,Android,2023-07-02
+981,Indianapolis,Android,2023-07-02
+456,Greater Boston,New iPhone,2023-07-02
+1012,Greater Boston,New iPhone,2023-07-02
+842,Greater Boston,Android,2023-07-02
+12,Greater Boston,Android,2023-07-02
+1009,Chicago,New iPhone,2023-07-02
+464,Bay Area,Android,2023-07-02
+997,Greater Boston,Android,2023-07-02
+849,Chicago,Old iPhone,2023-07-02
+28,Greater Boston,Old iPhone,2023-07-02
+398,Albuquerque,New iPhone,2023-07-02
+245,Albuquerque,New iPhone,2023-07-02
+426,New York City,Old iPhone,2023-07-02
+427,Chicago,Android,2023-07-02
+920,Indianapolis,New iPhone,2023-07-02
+679,Albuquerque,Old iPhone,2023-07-02
+944,Chicago,Old iPhone,2023-07-02
+622,Indianapolis,Android,2023-07-03
+676,Greater Boston,Old iPhone,2023-07-03
+65,New York City,New iPhone,2023-07-03
+623,Bay Area,Android,2023-07-03
+810,Chicago,Android,2023-07-03
+755,New York City,New iPhone,2023-07-03
+299,Indianapolis,Old iPhone,2023-07-03
+1002,Bay Area,New iPhone,2023-07-03
+203,Bay Area,New iPhone,2023-07-03
+959,Bay Area,Old iPhone,2023-07-03
+317,Greater Boston,New iPhone,2023-07-03
+673,Chicago,Android,2023-07-03
+254,Indianapolis,Old iPhone,2023-07-03
+113,Chicago,Old iPhone,2023-07-03
+1013,Greater Boston,Old iPhone,2023-07-03
+700,Greater Boston,New iPhone,2023-07-03
+365,New York City,Android,2023-07-03
+879,Chicago,Old iPhone,2023-07-03
+99,Bay Area,Old iPhone,2023-07-03
+644,New York City,Android,2023-07-03
+93,Albuquerque,Old iPhone,2023-07-03
+256,Chicago,Old iPhone,2023-07-03
+610,Indianapolis,New iPhone,2023-07-03
+527,New York City,Old iPhone,2023-07-03
+275,Bay Area,Android,2023-07-03
+780,Bay Area,Android,2023-07-03
+89,Bay Area,Old iPhone,2023-07-03
+159,Chicago,New iPhone,2023-07-03
+1016,Indianapolis,Android,2023-07-03
+241,Bay Area,New iPhone,2023-07-03
+304,Chicago,Old iPhone,2023-07-03
+240,Bay Area,Android,2023-07-03
+476,Albuquerque,New iPhone,2023-07-03
+597,New York City,New iPhone,2023-07-03
+760,Indianapolis,Android,2023-07-03
+109,New York City,New iPhone,2023-07-03
+817,Albuquerque,New iPhone,2023-07-03
+870,New York City,New iPhone,2023-07-03
+631,Chicago,Android,2023-07-03
+442,Albuquerque,New iPhone,2023-07-03
+1026,Bay Area,Old iPhone,2023-07-03
+473,Indianapolis,Old iPhone,2023-07-03
+768,New York City,New iPhone,2023-07-04
+1048,Chicago,New iPhone,2023-07-04
+940,Greater Boston,Android,2023-07-04
+308,Greater Boston,New iPhone,2023-07-04
+905,Greater Boston,New iPhone,2023-07-04
+491,New York City,Android,2023-07-04
+86,Greater Boston,New iPhone,2023-07-04
+27,Chicago,Old iPhone,2023-07-04
+599,Indianapolis,New iPhone,2023-07-04
+60,New York City,New iPhone,2023-07-04
+658,Albuquerque,Android,2023-07-04
+469,Chicago,New iPhone,2023-07-04
+348,Albuquerque,Old iPhone,2023-07-04
+88,New York City,Old iPhone,2023-07-04
+306,Indianapolis,Android,2023-07-04
+575,Greater Boston,Android,2023-07-04
+490,New York City,New iPhone,2023-07-04
+1007,Albuquerque,New iPhone,2023-07-04
+526,Greater Boston,Android,2023-07-04
+965,New York City,New iPhone,2023-07-04
+583,Indianapolis,Old iPhone,2023-07-04
+87,Chicago,Android,2023-07-04
+566,Albuquerque,Old iPhone,2023-07-04
+893,Indianapolis,Android,2023-07-04
+375,Greater Boston,Android,2023-07-04
+374,Albuquerque,Old iPhone,2023-07-04
+247,Albuquerque,New iPhone,2023-07-04
+546,Bay Area,New iPhone,2023-07-04
+958,New York City,New iPhone,2023-07-04
+1018,Indianapolis,Android,2023-07-04
+209,Indianapolis,Old iPhone,2023-07-04
+878,Indianapolis,Android,2023-07-04
+579,New York City,New iPhone,2023-07-04
+280,Albuquerque,Old iPhone,2023-07-04
+274,New York City,New iPhone,2023-07-04
+192,Indianapolis,New iPhone,2023-07-04
+1025,New York City,Android,2023-07-04
+297,Chicago,Old iPhone,2023-07-04
+3,Greater Boston,Android,2023-07-04
+96,New York City,Old iPhone,2023-07-04
+428,Bay Area,Old iPhone,2023-07-04
+545,Greater Boston,New iPhone,2023-07-05
+718,Albuquerque,Old iPhone,2023-07-05
+85,Albuquerque,New iPhone,2023-07-05
+227,New York City,New iPhone,2023-07-05
+581,Greater Boston,Android,2023-07-05
+516,New York City,Old iPhone,2023-07-05
+828,Albuquerque,Old iPhone,2023-07-05
+445,Greater Boston,Old iPhone,2023-07-05
+493,Bay Area,New iPhone,2023-07-05
+845,Chicago,Old iPhone,2023-07-05
+69,Chicago,Android,2023-07-05
+675,Bay Area,New iPhone,2023-07-05
+517,New York City,New iPhone,2023-07-05
+935,New York City,Android,2023-07-05
+161,New York City,Android,2023-07-05
+792,New York City,Old iPhone,2023-07-05
+1021,Indianapolis,New iPhone,2023-07-05
+1047,Greater Boston,New iPhone,2023-07-05
+912,Bay Area,New iPhone,2023-07-05
+107,Indianapolis,Android,2023-07-05
+18,Albuquerque,New iPhone,2023-07-05
+484,Indianapolis,Android,2023-07-05
+640,Indianapolis,New iPhone,2023-07-05
+390,Greater Boston,Android,2023-07-05
+242,New York City,Old iPhone,2023-07-05
+547,Indianapolis,New iPhone,2023-07-05
+180,Chicago,New iPhone,2023-07-05
+300,Greater Boston,New iPhone,2023-07-05
+941,Indianapolis,New iPhone,2023-07-05
+441,Bay Area,Android,2023-07-05
+600,Indianapolis,Old iPhone,2023-07-05
+167,New York City,Old iPhone,2023-07-05
+347,Chicago,New iPhone,2023-07-05
+827,Bay Area,Old iPhone,2023-07-05
+707,Indianapolis,Android,2023-07-05
+537,Bay Area,Old iPhone,2023-07-05
+1019,Chicago,New iPhone,2023-07-05
+818,Chicago,Old iPhone,2023-07-05
+169,Bay Area,Android,2023-07-05
+877,New York City,Android,2023-07-05
+118,New York City,Android,2023-07-05
+643,Chicago,Old iPhone,2023-07-05
+801,Albuquerque,New iPhone,2023-07-05
+955,Albuquerque,New iPhone,2023-07-05
+904,Albuquerque,Old iPhone,2023-07-05
+419,Bay Area,Old iPhone,2023-07-05
+781,Greater Boston,Old iPhone,2023-07-05
+261,Albuquerque,Android,2023-07-05
+121,Albuquerque,Old iPhone,2023-07-05
+358,New York City,New iPhone,2023-07-05
+505,Chicago,Android,2023-07-05
+692,Bay Area,New iPhone,2023-07-05
+1029,New York City,Android,2023-07-05
+1010,Albuquerque,Android,2023-07-05
+433,Albuquerque,Android,2023-07-05
+325,Albuquerque,Old iPhone,2023-07-05
+251,Bay Area,Old iPhone,2023-07-06
+77,Indianapolis,Android,2023-07-06
+921,Indianapolis,Android,2023-07-06
+238,Albuquerque,New iPhone,2023-07-06
+148,Chicago,Old iPhone,2023-07-06
+10,Bay Area,New iPhone,2023-07-06
+225,Chicago,New iPhone,2023-07-06
+460,Albuquerque,Android,2023-07-06
+825,New York City,Android,2023-07-06
+471,Indianapolis,New iPhone,2023-07-06
+1045,Chicago,Old iPhone,2023-07-06
+357,Indianapolis,Android,2023-07-06
+747,Greater Boston,New iPhone,2023-07-06
+388,Greater Boston,Android,2023-07-06
+495,Albuquerque,Android,2023-07-06
+459,Bay Area,Android,2023-07-06
+37,New York City,Old iPhone,2023-07-06
+902,Chicago,Old iPhone,2023-07-06
+1024,Indianapolis,New iPhone,2023-07-06
+52,Indianapolis,Old iPhone,2023-07-06
+888,Indianapolis,New iPhone,2023-07-06
+84,New York City,New iPhone,2023-07-06
+672,Greater Boston,New iPhone,2023-07-06
+1001,Chicago,New iPhone,2023-07-06
+354,Indianapolis,Android,2023-07-06
+906,Greater Boston,Android,2023-07-06
+685,Bay Area,Old iPhone,2023-07-06
+832,Bay Area,Android,2023-07-06
+742,Indianapolis,Old iPhone,2023-07-06
+876,Bay Area,New iPhone,2023-07-06
+285,New York City,New iPhone,2023-07-06
+220,Chicago,Old iPhone,2023-07-06
+697,New York City,Old iPhone,2023-07-06
+932,Albuquerque,New iPhone,2023-07-06
+248,Bay Area,New iPhone,2023-07-06
+992,Albuquerque,Android,2023-07-06
+61,Albuquerque,New iPhone,2023-07-06
+40,Greater Boston,New iPhone,2023-07-06
+634,Albuquerque,New iPhone,2023-07-06
+468,Albuquerque,Android,2023-07-06
+939,Chicago,Android,2023-07-06
+440,Chicago,Android,2023-07-06
+984,Indianapolis,Android,2023-07-06
+344,Bay Area,New iPhone,2023-07-07
+19,Chicago,Android,2023-07-07
+632,Greater Boston,Android,2023-07-07
+702,Indianapolis,Android,2023-07-07
+860,Indianapolis,Old iPhone,2023-07-07
+399,Indianapolis,New iPhone,2023-07-07
+541,Indianapolis,New iPhone,2023-07-07
+29,New York City,Android,2023-07-07
+774,Chicago,Android,2023-07-07
+726,Greater Boston,Android,2023-07-07
+467,Bay Area,Android,2023-07-07
+360,Indianapolis,New iPhone,2023-07-07
+56,New York City,Old iPhone,2023-07-07
+174,Greater Boston,Android,2023-07-07
+76,Indianapolis,Old iPhone,2023-07-07
+359,Chicago,New iPhone,2023-07-07
+524,Bay Area,Old iPhone,2023-07-07
+91,Indianapolis,Old iPhone,2023-07-07
+100,New York City,Android,2023-07-07
+647,Indianapolis,Android,2023-07-07
+378,New York City,New iPhone,2023-07-07
+36,Bay Area,Android,2023-07-07
+897,Greater Boston,Old iPhone,2023-07-07
+689,Bay Area,Old iPhone,2023-07-07
+956,Bay Area,Android,2023-07-07
+482,Indianapolis,Old iPhone,2023-07-07
+542,Bay Area,New iPhone,2023-07-07
+292,New York City,Android,2023-07-07
+733,Chicago,Android,2023-07-07
+655,Chicago,Old iPhone,2023-07-07
+683,New York City,Android,2023-07-07
+680,Indianapolis,New iPhone,2023-07-07
+789,Chicago,Old iPhone,2023-07-07
+177,Albuquerque,New iPhone,2023-07-07
+569,Greater Boston,Old iPhone,2023-07-07
+303,Greater Boston,New iPhone,2023-07-07
+964,Bay Area,New iPhone,2023-07-07
+134,Indianapolis,New iPhone,2023-07-07
+176,Indianapolis,New iPhone,2023-07-07
+243,New York City,New iPhone,2023-07-07
+7,Bay Area,Old iPhone,2023-07-07
+614,Bay Area,New iPhone,2023-07-07
+298,Bay Area,Android,2023-07-07
+764,Bay Area,Android,2023-07-07
+183,New York City,Android,2023-07-07
+621,Albuquerque,New iPhone,2023-07-07
+945,Albuquerque,Android,2023-07-07
+47,Indianapolis,Old iPhone,2023-07-07
+152,New York City,Old iPhone,2023-07-07
+735,Greater Boston,Android,2023-07-07
+162,Bay Area,Old iPhone,2023-07-07
+611,New York City,Android,2023-07-07
+160,Bay Area,Old iPhone,2023-07-07
+43,Chicago,New iPhone,2023-07-07
+627,Bay Area,New iPhone,2023-07-07
+639,Indianapolis,Android,2023-07-07
+775,Bay Area,Android,2023-07-07
+739,Greater Boston,Old iPhone,2023-07-07
+549,Albuquerque,Old iPhone,2023-07-07
+901,New York City,New iPhone,2023-07-07
+187,Bay Area,Android,2023-07-07
+1034,Bay Area,New iPhone,2023-07-07
+135,Bay Area,Old iPhone,2023-07-07
+543,Albuquerque,Android,2023-07-07
+407,Chicago,New iPhone,2023-07-07
+1008,Albuquerque,Old iPhone,2023-07-07
+462,Albuquerque,Android,2023-07-07
+33,Bay Area,Old iPhone,2023-07-07
+564,Bay Area,New iPhone,2023-07-08
+952,Chicago,Old iPhone,2023-07-08
+889,Indianapolis,New iPhone,2023-07-08
+513,Albuquerque,Old iPhone,2023-07-08
+226,Chicago,New iPhone,2023-07-08
+790,Bay Area,Android,2023-07-08
+551,Indianapolis,New iPhone,2023-07-08
+478,Albuquerque,Old iPhone,2023-07-08
+740,Albuquerque,New iPhone,2023-07-08
+908,Albuquerque,Old iPhone,2023-07-08
+761,Greater Boston,Android,2023-07-08
+138,Indianapolis,New iPhone,2023-07-08
+1049,Bay Area,Android,2023-07-08
+363,Bay Area,Old iPhone,2023-07-08
+266,Chicago,Android,2023-07-08
+236,Albuquerque,Old iPhone,2023-07-08
+488,New York City,Old iPhone,2023-07-08
+714,Greater Boston,New iPhone,2023-07-08
+1015,Albuquerque,Android,2023-07-08
+45,Bay Area,New iPhone,2023-07-08
+688,Chicago,New iPhone,2023-07-08
+593,New York City,New iPhone,2023-07-08
+922,Chicago,Android,2023-07-08
+868,Bay Area,New iPhone,2023-07-08
+691,Chicago,Android,2023-07-08
+708,New York City,New iPhone,2023-07-08
+913,Bay Area,New iPhone,2023-07-08
+487,Albuquerque,Old iPhone,2023-07-08
+221,Bay Area,Old iPhone,2023-07-08
+429,Albuquerque,Android,2023-07-08
+165,Chicago,Android,2023-07-08
+844,Greater Boston,New iPhone,2023-07-08
+53,Albuquerque,Android,2023-07-08
+307,Greater Boston,Android,2023-07-08
+340,Chicago,Old iPhone,2023-07-08
+892,New York City,New iPhone,2023-07-08
+188,New York City,New iPhone,2023-07-08
+531,Bay Area,Old iPhone,2023-07-08
+25,Chicago,New iPhone,2023-07-08
+737,Greater Boston,Android,2023-07-08
+962,Albuquerque,Android,2023-07-08
+999,Chicago,New iPhone,2023-07-08
+891,Greater Boston,Android,2023-07-08
+900,Albuquerque,Old iPhone,2023-07-08
+831,Chicago,Old iPhone,2023-07-08
+23,Indianapolis,Android,2023-07-08
+142,New York City,New iPhone,2023-07-08
+907,New York City,Old iPhone,2023-07-08
+926,Indianapolis,New iPhone,2023-07-08
+995,Bay Area,New iPhone,2023-07-08
+731,New York City,Android,2023-07-08
+79,Bay Area,Old iPhone,2023-07-08
+163,Greater Boston,Old iPhone,2023-07-09
+709,Greater Boston,Old iPhone,2023-07-09
+263,Bay Area,Android,2023-07-09
+613,New York City,Android,2023-07-09
+503,Greater Boston,Old iPhone,2023-07-09
+172,Chicago,New iPhone,2023-07-09
+425,Bay Area,New iPhone,2023-07-09
+141,Albuquerque,New iPhone,2023-07-09
+765,Bay Area,Android,2023-07-09
+13,Indianapolis,New iPhone,2023-07-09
+925,Albuquerque,Android,2023-07-09
+629,Indianapolis,Old iPhone,2023-07-09
+110,Albuquerque,New iPhone,2023-07-09
+1027,Indianapolis,New iPhone,2023-07-09
+310,Greater Boston,New iPhone,2023-07-09
+252,New York City,New iPhone,2023-07-09
+553,Greater Boston,New iPhone,2023-07-09
+196,New York City,Android,2023-07-09
+954,Greater Boston,Android,2023-07-09
+334,Greater Boston,Old iPhone,2023-07-09
+705,Indianapolis,New iPhone,2023-07-09
+346,Chicago,Old iPhone,2023-07-09
+322,Greater Boston,New iPhone,2023-07-09
+619,Greater Boston,Android,2023-07-09
+698,Albuquerque,New iPhone,2023-07-09
+1044,New York City,Android,2023-07-09
+559,New York City,New iPhone,2023-07-09
+24,Albuquerque,New iPhone,2023-07-09
+807,Indianapolis,Old iPhone,2023-07-09
+886,Albuquerque,New iPhone,2023-07-09
+562,Bay Area,New iPhone,2023-07-09
+430,Chicago,Old iPhone,2023-07-09
+660,Chicago,Android,2023-07-09
+338,Albuquerque,Old iPhone,2023-07-09
+185,Bay Area,Android,2023-07-09
+662,Albuquerque,Android,2023-07-09
+447,Bay Area,New iPhone,2023-07-09
+749,Indianapolis,Android,2023-07-09
+797,Greater Boston,New iPhone,2023-07-09
+361,Greater Boston,New iPhone,2023-07-09
+802,New York City,Android,2023-07-09
+591,New York City,Old iPhone,2023-07-09
+73,Bay Area,Old iPhone,2023-07-09
+15,Bay Area,New iPhone,2023-07-09
+557,Greater Boston,Old iPhone,2023-07-09
+49,New York City,New iPhone,2023-07-09
+1038,Chicago,Android,2023-07-09
+439,New York City,Old iPhone,2023-07-10
+1005,Bay Area,Old iPhone,2023-07-10
+881,Albuquerque,Old iPhone,2023-07-10
+362,Indianapolis,Old iPhone,2023-07-10
+1050,Greater Boston,Old iPhone,2023-07-10
+102,Albuquerque,Old iPhone,2023-07-10
+291,Greater Boston,Android,2023-07-10
+934,Albuquerque,Android,2023-07-10
+206,Chicago,New iPhone,2023-07-10
+191,Albuquerque,New iPhone,2023-07-10
+894,Indianapolis,Old iPhone,2023-07-10
+687,Indianapolis,Android,2023-07-10
+548,Indianapolis,Android,2023-07-10
+379,Greater Boston,Android,2023-07-10
+864,Greater Boston,New iPhone,2023-07-10
+568,New York City,Old iPhone,2023-07-10
+745,New York City,Old iPhone,2023-07-10
+534,Greater Boston,Android,2023-07-10
+977,Albuquerque,Android,2023-07-10
+411,Indianapolis,Android,2023-07-10
+950,Albuquerque,New iPhone,2023-07-10
+951,Greater Boston,New iPhone,2023-07-10
+946,Greater Boston,New iPhone,2023-07-10
+423,Indianapolis,Old iPhone,2023-07-10
+820,New York City,Old iPhone,2023-07-10
+367,Greater Boston,Old iPhone,2023-07-10
+750,Albuquerque,New iPhone,2023-07-10
+1023,Indianapolis,Old iPhone,2023-07-10
+133,Albuquerque,Old iPhone,2023-07-10
+50,Greater Boston,New iPhone,2023-07-10
+753,Bay Area,Old iPhone,2023-07-10
+218,Greater Boston,Old iPhone,2023-07-10
+927,Greater Boston,Android,2023-07-10
+903,Indianapolis,Old iPhone,2023-07-10
+210,Albuquerque,Android,2023-07-10
+767,Chicago,Android,2023-07-10
+710,Chicago,Old iPhone,2023-07-10
+727,Indianapolis,New iPhone,2023-07-10
+336,Indianapolis,Android,2023-07-10
+51,Indianapolis,New iPhone,2023-07-10
+914,Greater Boston,Android,2023-07-10
+257,Bay Area,Old iPhone,2023-07-10
+823,Indianapolis,Old iPhone,2023-07-10
+785,Chicago,New iPhone,2023-07-10
+1014,Bay Area,Old iPhone,2023-07-10
+890,Albuquerque,Android,2023-07-10
+973,Greater Boston,Android,2023-07-10
+217,Chicago,New iPhone,2023-07-10
+616,Chicago,Android,2023-07-10
+521,Greater Boston,Android,2023-07-11
+701,Albuquerque,New iPhone,2023-07-11
+769,New York City,New iPhone,2023-07-11
+824,New York City,New iPhone,2023-07-11
+483,Indianapolis,Android,2023-07-11
+8,New York City,New iPhone,2023-07-11
+561,Indianapolis,New iPhone,2023-07-11
+846,New York City,Old iPhone,2023-07-11
+533,New York City,New iPhone,2023-07-11
+389,New York City,New iPhone,2023-07-11
+519,Albuquerque,Old iPhone,2023-07-11
+601,New York City,New iPhone,2023-07-11
+717,Greater Boston,Old iPhone,2023-07-11
+896,Chicago,New iPhone,2023-07-11
+656,Albuquerque,Old iPhone,2023-07-11
+267,Bay Area,New iPhone,2023-07-11
+284,Indianapolis,Android,2023-07-11
+181,Bay Area,New iPhone,2023-07-11
+819,Chicago,New iPhone,2023-07-11
+205,Chicago,Android,2023-07-11
+277,Bay Area,New iPhone,2023-07-11
+498,Bay Area,Android,2023-07-11
+323,Albuquerque,New iPhone,2023-07-11
+1043,Indianapolis,Old iPhone,2023-07-11
+35,Indianapolis,New iPhone,2023-07-11
+421,Bay Area,Android,2023-07-11
+356,Albuquerque,New iPhone,2023-07-11
+759,Bay Area,Android,2023-07-11
+966,Chicago,Old iPhone,2023-07-11
+129,Chicago,New iPhone,2023-07-11
+214,Indianapolis,Old iPhone,2023-07-11
+910,Chicago,Android,2023-07-11
+1036,Indianapolis,New iPhone,2023-07-11
+265,Indianapolis,Old iPhone,2023-07-11
+972,Chicago,Old iPhone,2023-07-11
+224,New York City,Android,2023-07-11
+380,Chicago,Old iPhone,2023-07-11
+408,Indianapolis,Old iPhone,2023-07-11
+455,Bay Area,Old iPhone,2023-07-11
+633,New York City,New iPhone,2023-07-11
+544,New York City,Old iPhone,2023-07-11
+772,New York City,Old iPhone,2023-07-11
+321,Chicago,Android,2023-07-11
+800,Chicago,Android,2023-07-11
+1041,New York City,New iPhone,2023-07-11
+74,New York City,Old iPhone,2023-07-11
+909,Chicago,Old iPhone,2023-07-11
+812,New York City,New iPhone,2023-07-11
+1004,Greater Boston,Android,2023-07-11
+342,Greater Boston,Android,2023-07-11
+682,Indianapolis,New iPhone,2023-07-11
+273,Indianapolis,Old iPhone,2023-07-11
+594,Greater Boston,Android,2023-07-11
+41,Greater Boston,Android,2023-07-11
+496,Indianapolis,Old iPhone,2023-07-11
+270,Greater Boston,Android,2023-07-11
+686,Greater Boston,New iPhone,2023-07-11
+1006,Greater Boston,New iPhone,2023-07-12
+81,Chicago,New iPhone,2023-07-12
+723,Bay Area,Old iPhone,2023-07-12
+508,Bay Area,Android,2023-07-12
+978,Albuquerque,Android,2023-07-12
+349,Albuquerque,Android,2023-07-12
+1003,Bay Area,Android,2023-07-12
+237,Albuquerque,New iPhone,2023-07-12
+278,Albuquerque,New iPhone,2023-07-12
+833,Albuquerque,Old iPhone,2023-07-12
+332,New York City,Old iPhone,2023-07-12
+168,New York City,Android,2023-07-12
+232,Albuquerque,New iPhone,2023-07-12
+21,Chicago,Android,2023-07-12
+417,Chicago,Android,2023-07-12
+969,Chicago,New iPhone,2023-07-12
+843,Greater Boston,Old iPhone,2023-07-12
+228,Chicago,Android,2023-07-12
+283,New York City,Android,2023-07-12
+130,Bay Area,Android,2023-07-12
+576,Greater Boston,New iPhone,2023-07-12
+1020,Bay Area,New iPhone,2023-07-12
+584,Greater Boston,New iPhone,2023-07-12
+415,Albuquerque,Android,2023-07-12
+716,Indianapolis,Old iPhone,2023-07-12
+757,Indianapolis,Android,2023-07-12
+554,Chicago,Android,2023-07-12
+565,Chicago,New iPhone,2023-07-12
+403,Indianapolis,Android,2023-07-12
+830,New York City,Old iPhone,2023-07-12
+48,New York City,New iPhone,2023-07-12
+20,Albuquerque,Old iPhone,2023-07-12
+798,Albuquerque,Old iPhone,2023-07-12
+511,Albuquerque,New iPhone,2023-07-12
+899,Chicago,Old iPhone,2023-07-12
+405,New York City,Android,2023-07-12
+720,New York City,Android,2023-07-12
+264,Albuquerque,Android,2023-07-12
+752,Chicago,Old iPhone,2023-07-13
+474,New York City,Old iPhone,2023-07-13
+213,Greater Boston,Android,2023-07-13
+609,Indianapolis,New iPhone,2023-07-13
+1032,Chicago,Old iPhone,2023-07-13
+711,Albuquerque,Old iPhone,2023-07-13
+337,Greater Boston,Android,2023-07-13
+396,Greater Boston,Old iPhone,2023-07-13
+401,Indianapolis,Android,2023-07-13
+974,Bay Area,Old iPhone,2023-07-13
+671,Chicago,Android,2023-07-13
+64,New York City,New iPhone,2023-07-13
+523,Indianapolis,New iPhone,2023-07-13
+150,Indianapolis,Android,2023-07-13
+917,New York City,Android,2023-07-13
+884,Albuquerque,New iPhone,2023-07-13
+808,Chicago,Old iPhone,2023-07-13
+38,Greater Boston,Android,2023-07-13
+539,Greater Boston,New iPhone,2023-07-13
+438,Albuquerque,Old iPhone,2023-07-13
+143,Greater Boston,Old iPhone,2023-07-13
+434,Chicago,Old iPhone,2023-07-13
+777,Greater Boston,Old iPhone,2023-07-13
+444,Greater Boston,Android,2023-07-13
+556,Indianapolis,New iPhone,2023-07-13
+657,Indianapolis,New iPhone,2023-07-13
+235,New York City,Android,2023-07-13
+915,Greater Boston,Old iPhone,2023-07-13
+936,Chicago,Android,2023-07-13
+795,New York City,Android,2023-07-13
+664,Chicago,Old iPhone,2023-07-13
+315,Bay Area,New iPhone,2023-07-13
+72,New York City,Android,2023-07-13
+155,Bay Area,New iPhone,2023-07-13
+630,New York City,New iPhone,2023-07-13
+124,Chicago,New iPhone,2023-07-13
+151,Chicago,New iPhone,2023-07-13
+414,Indianapolis,Old iPhone,2023-07-13
+604,Chicago,Android,2023-07-13
+413,Indianapolis,Old iPhone,2023-07-13
+199,Indianapolis,New iPhone,2023-07-13
+32,Albuquerque,Old iPhone,2023-07-13
+318,Bay Area,New iPhone,2023-07-13
+722,New York City,Android,2023-07-13
+570,Chicago,New iPhone,2023-07-13
+582,Indianapolis,New iPhone,2023-07-13
+654,Greater Boston,New iPhone,2023-07-13
+486,Bay Area,Android,2023-07-13
+156,Chicago,Old iPhone,2023-07-13
+131,New York City,Old iPhone,2023-07-13
+861,Indianapolis,New iPhone,2023-07-13
+983,Chicago,Old iPhone,2023-07-14
+856,Chicago,New iPhone,2023-07-14
+4,Chicago,New iPhone,2023-07-14
+313,Greater Boston,Android,2023-07-14
+635,Chicago,Android,2023-07-14
+804,New York City,Android,2023-07-14
+179,Albuquerque,Old iPhone,2023-07-14
+272,Albuquerque,Old iPhone,2023-07-14
+436,Bay Area,Old iPhone,2023-07-14
+869,Chicago,Old iPhone,2023-07-14
+796,Greater Boston,Old iPhone,2023-07-14
+312,Indianapolis,New iPhone,2023-07-14
+986,Indianapolis,Old iPhone,2023-07-14
+234,Albuquerque,New iPhone,2023-07-14
+250,Greater Boston,New iPhone,2023-07-14
+938,Albuquerque,New iPhone,2023-07-14
+229,Greater Boston,Android,2023-07-14
+197,New York City,New iPhone,2023-07-14
+661,Indianapolis,New iPhone,2023-07-14
+95,New York City,New iPhone,2023-07-14
+947,Indianapolis,New iPhone,2023-07-14
+1028,Chicago,New iPhone,2023-07-14
+532,Chicago,Android,2023-07-14
+454,Albuquerque,New iPhone,2023-07-14
+693,New York City,Android,2023-07-14
+525,Greater Boston,Old iPhone,2023-07-14
+290,Indianapolis,New iPhone,2023-07-14
+289,New York City,Android,2023-07-14
+97,Indianapolis,Old iPhone,2023-07-14
+71,Chicago,Android,2023-07-14
+335,Chicago,Old iPhone,2023-07-14
+127,Bay Area,Android,2023-07-14
+578,Indianapolis,Android,2023-07-14
+499,Albuquerque,Old iPhone,2023-07-14
+836,Bay Area,Old iPhone,2023-07-14
+725,Chicago,Android,2023-07-14
+713,Albuquerque,New iPhone,2023-07-14
+466,Albuquerque,New iPhone,2023-07-14
+918,Chicago,New iPhone,2023-07-14
+123,New York City,Old iPhone,2023-07-14
+624,New York City,New iPhone,2023-07-14
+988,New York City,New iPhone,2023-07-14
+602,Albuquerque,New iPhone,2023-07-15
+552,New York City,Android,2023-07-15
+435,Greater Boston,Old iPhone,2023-07-15
+326,Bay Area,New iPhone,2023-07-15
+136,Greater Boston,New iPhone,2023-07-15
+976,Chicago,Android,2023-07-15
+119,Albuquerque,Android,2023-07-15
+301,Albuquerque,Android,2023-07-15
+851,Indianapolis,Android,2023-07-15
+246,Greater Boston,Android,2023-07-15
+204,Greater Boston,Old iPhone,2023-07-15
+840,New York City,Old iPhone,2023-07-15
+194,New York City,New iPhone,2023-07-15
+1035,Indianapolis,Android,2023-07-15
+62,Indianapolis,Android,2023-07-15
+837,Albuquerque,New iPhone,2023-07-15
+967,New York City,New iPhone,2023-07-15
+961,Chicago,Old iPhone,2023-07-15
+6,Chicago,New iPhone,2023-07-15
+862,Indianapolis,Android,2023-07-15
+555,Bay Area,New iPhone,2023-07-15
+923,Chicago,Android,2023-07-15
+715,Chicago,Android,2023-07-15
+871,Chicago,Old iPhone,2023-07-15
+506,Indianapolis,New iPhone,2023-07-15
+373,Indianapolis,New iPhone,2023-07-15
+259,Albuquerque,New iPhone,2023-07-15
+451,Bay Area,Old iPhone,2023-07-15
+120,Bay Area,Android,2023-07-15
+813,Chicago,Android,2023-07-15
+9,Indianapolis,New iPhone,2023-07-15
+98,Indianapolis,New iPhone,2023-07-15
+372,New York City,Android,2023-07-15
+286,Bay Area,New iPhone,2023-07-15
+66,New York City,Old iPhone,2023-07-15
+282,Indianapolis,New iPhone,2023-07-15
+572,Indianapolis,New iPhone,2023-07-15
+669,Chicago,Old iPhone,2023-07-15
+158,Chicago,New iPhone,2023-07-15
+502,New York City,New iPhone,2023-07-15
+393,Albuquerque,New iPhone,2023-07-15
+103,Indianapolis,Android,2023-07-15
+728,Indianapolis,Android,2023-07-15
+492,Indianapolis,Android,2023-07-15
+776,Indianapolis,Android,2023-07-15
+324,Bay Area,Android,2023-07-15
+741,Albuquerque,Old iPhone,2023-07-15
+144,Chicago,Old iPhone,2023-07-15
+960,New York City,Old iPhone,2023-07-15
+328,Chicago,Old iPhone,2023-07-15
+394,Greater Boston,Android,2023-07-15
+1,Indianapolis,Old iPhone,2023-07-15
+670,Chicago,Old iPhone,2023-07-15
+1017,Chicago,Old iPhone,2023-07-15
+515,Greater Boston,New iPhone,2023-07-15
+748,New York City,Old iPhone,2023-07-15
+540,Bay Area,Android,2023-07-15
+489,Indianapolis,New iPhone,2023-07-15
+736,New York City,Old iPhone,2023-07-15
+208,Bay Area,Android,2023-07-15
+815,Albuquerque,New iPhone,2023-07-15
+406,Indianapolis,Old iPhone,2023-07-16
+494,Indianapolis,New iPhone,2023-07-16
+853,Indianapolis,Old iPhone,2023-07-16
+762,Chicago,Old iPhone,2023-07-16
+67,Greater Boston,Android,2023-07-16
+754,Albuquerque,Android,2023-07-16
+230,Indianapolis,Old iPhone,2023-07-16
+963,Bay Area,New iPhone,2023-07-16
+730,Bay Area,Android,2023-07-16
+850,Indianapolis,Old iPhone,2023-07-16
+461,Greater Boston,Android,2023-07-16
+132,New York City,New iPhone,2023-07-16
+953,Bay Area,Android,2023-07-16
+68,Greater Boston,New iPhone,2023-07-16
+364,New York City,New iPhone,2023-07-16
+608,Albuquerque,New iPhone,2023-07-16
+222,Albuquerque,Android,2023-07-16
+696,Indianapolis,Android,2023-07-16
+114,Albuquerque,Android,2023-07-16
+615,Indianapolis,New iPhone,2023-07-16
+355,Albuquerque,New iPhone,2023-07-16
+410,Bay Area,Old iPhone,2023-07-16
+628,Bay Area,Android,2023-07-16
+911,Indianapolis,Android,2023-07-16
+678,Bay Area,Old iPhone,2023-07-16
+699,Albuquerque,Old iPhone,2023-07-16
+485,Indianapolis,Android,2023-07-16
+475,Albuquerque,Android,2023-07-16
+507,Bay Area,Android,2023-07-16
+195,Albuquerque,Old iPhone,2023-07-16
+883,Indianapolis,New iPhone,2023-07-16
+369,Greater Boston,New iPhone,2023-07-16
+638,Chicago,Old iPhone,2023-07-16
+732,Indianapolis,New iPhone,2023-07-16
+57,Bay Area,New iPhone,2023-07-16
+989,New York City,Android,2023-07-16
+821,New York City,Android,2023-07-16
+479,Albuquerque,Old iPhone,2023-07-16
+993,Greater Boston,Android,2023-07-16
+620,Bay Area,Old iPhone,2023-07-16
+738,Chicago,Android,2023-07-16
+563,New York City,Old iPhone,2023-07-16
+788,Indianapolis,New iPhone,2023-07-16
+153,Chicago,Android,2023-07-16
+874,Chicago,Old iPhone,2023-07-16
+157,Chicago,New iPhone,2023-07-16
+146,Indianapolis,Old iPhone,2023-07-16
+233,New York City,Android,2023-07-16
+852,New York City,Android,2023-07-16
+458,New York City,Old iPhone,2023-07-16
+1046,Albuquerque,New iPhone,2023-07-16
+26,Bay Area,New iPhone,2023-07-16
+875,Albuquerque,New iPhone,2023-07-16
+522,Albuquerque,New iPhone,2023-07-17
+302,Greater Boston,Old iPhone,2023-07-17
+816,Chicago,Android,2023-07-17
+106,Bay Area,Old iPhone,2023-07-17
+320,Indianapolis,New iPhone,2023-07-17
+319,New York City,Old iPhone,2023-07-17
+585,Indianapolis,Android,2023-07-17
+309,Bay Area,New iPhone,2023-07-17
+92,Chicago,New iPhone,2023-07-17
+865,Albuquerque,Old iPhone,2023-07-17
+305,New York City,New iPhone,2023-07-17
+94,Bay Area,Android,2023-07-17
+5,Bay Area,Old iPhone,2023-07-17
+54,Bay Area,New iPhone,2023-07-17
+14,Albuquerque,Android,2023-07-17
+44,Albuquerque,New iPhone,2023-07-17
+154,Chicago,Old iPhone,2023-07-17
+457,Indianapolis,Android,2023-07-17
+63,Greater Boston,New iPhone,2023-07-17
+586,Bay Area,Android,2023-07-17
+994,Albuquerque,Old iPhone,2023-07-17
+606,New York City,New iPhone,2023-07-17
+550,Bay Area,Old iPhone,2023-07-17
+791,Bay Area,Android,2023-07-17
+867,Bay Area,Old iPhone,2023-07-17
+982,Greater Boston,Android,2023-07-17
+382,Greater Boston,Old iPhone,2023-07-17
+681,Greater Boston,New iPhone,2023-07-17
+1039,Chicago,Android,2023-07-17
+612,Bay Area,Android,2023-07-17
+778,Chicago,Old iPhone,2023-07-17
+450,Greater Boston,Android,2023-07-17
+145,Chicago,Android,2023-07-17
+803,Albuquerque,Old iPhone,2023-07-17
+293,Bay Area,New iPhone,2023-07-17
+219,Chicago,New iPhone,2023-07-17
+605,Greater Boston,Android,2023-07-17
+201,Chicago,New iPhone,2023-07-17
+589,Albuquerque,Old iPhone,2023-07-17
+653,Chicago,New iPhone,2023-07-17
+838,New York City,Old iPhone,2023-07-17
+758,Albuquerque,New iPhone,2023-07-17
+880,Chicago,New iPhone,2023-07-17
+383,Albuquerque,Old iPhone,2023-07-17
+420,Albuquerque,New iPhone,2023-07-17
+677,New York City,Old iPhone,2023-07-17
+90,Indianapolis,New iPhone,2023-07-17
+744,Chicago,Android,2023-07-17
+126,Albuquerque,Old iPhone,2023-07-17
+329,Chicago,Old iPhone,2023-07-17
+771,Indianapolis,Old iPhone,2023-07-17
+719,Bay Area,Old iPhone,2023-07-17
+115,Greater Boston,Old iPhone,2023-07-17
+806,Albuquerque,Android,2023-07-17
+140,Chicago,New iPhone,2023-07-18
+607,Bay Area,New iPhone,2023-07-18
+592,Indianapolis,Android,2023-07-18
+626,Bay Area,Android,2023-07-18
+371,Greater Boston,Old iPhone,2023-07-18
+376,Greater Boston,New iPhone,2023-07-18
+690,Chicago,Old iPhone,2023-07-18
+116,New York City,Android,2023-07-18
+397,Chicago,Android,2023-07-18
+164,New York City,Android,2023-07-18
+470,Bay Area,Old iPhone,2023-07-18
+175,Bay Area,New iPhone,2023-07-18
+970,New York City,New iPhone,2023-07-18
+216,Albuquerque,New iPhone,2023-07-18
+872,Greater Boston,New iPhone,2023-07-18
+834,Chicago,Old iPhone,2023-07-18
+370,Bay Area,Old iPhone,2023-07-18
+855,Albuquerque,Old iPhone,2023-07-18
+558,Albuquerque,Old iPhone,2023-07-18
+449,Indianapolis,Android,2023-07-18
+520,Bay Area,New iPhone,2023-07-18
+829,Albuquerque,Android,2023-07-18
+353,Albuquerque,Android,2023-07-18
+848,Albuquerque,Old iPhone,2023-07-18
+381,Indianapolis,New iPhone,2023-07-18
+269,Greater Boston,New iPhone,2023-07-18
+39,Bay Area,New iPhone,2023-07-18
+987,Chicago,New iPhone,2023-07-18
+452,New York City,Old iPhone,2023-07-18
+202,Bay Area,Android,2023-07-18
+560,New York City,Old iPhone,2023-07-18
+402,Chicago,New iPhone,2023-07-18
+137,Indianapolis,Old iPhone,2023-07-18
+500,Indianapolis,New iPhone,2023-07-18
+255,Bay Area,Android,2023-07-18
+350,Indianapolis,New iPhone,2023-07-18
+244,Chicago,Old iPhone,2023-07-18
+567,Albuquerque,Old iPhone,2023-07-18
+751,Chicago,New iPhone,2023-07-18
+646,Albuquerque,Android,2023-07-18
+930,Albuquerque,Android,2023-07-18
+117,Chicago,Android,2023-07-18
+882,Indianapolis,New iPhone,2023-07-18
+327,Bay Area,New iPhone,2023-07-19
+588,New York City,Old iPhone,2023-07-19
+674,Chicago,New iPhone,2023-07-19
+985,Albuquerque,Old iPhone,2023-07-19
+170,Chicago,Old iPhone,2023-07-19
+763,Greater Boston,Android,2023-07-19
+333,Bay Area,Old iPhone,2023-07-19
+648,Chicago,Old iPhone,2023-07-19
+756,Albuquerque,Android,2023-07-19
+603,Indianapolis,Android,2023-07-19
+857,Chicago,New iPhone,2023-07-19
+703,Albuquerque,New iPhone,2023-07-19
+504,New York City,New iPhone,2023-07-19
+530,Chicago,Android,2023-07-19
+933,Albuquerque,Android,2023-07-19
+667,Greater Boston,Old iPhone,2023-07-19
+805,Albuquerque,Old iPhone,2023-07-19
+598,Chicago,Android,2023-07-19
+446,Greater Boston,Android,2023-07-19
+590,Greater Boston,Old iPhone,2023-07-19
+617,Greater Boston,Android,2023-07-19
+497,Indianapolis,Old iPhone,2023-07-19
+501,New York City,New iPhone,2023-07-19
+811,Bay Area,Old iPhone,2023-07-19
+885,Chicago,Old iPhone,2023-07-19
+17,Chicago,Old iPhone,2023-07-19
+649,New York City,New iPhone,2023-07-19
+258,Bay Area,New iPhone,2023-07-19
+281,New York City,New iPhone,2023-07-19
+295,Indianapolis,New iPhone,2023-07-19
+942,Chicago,Old iPhone,2023-07-19
+448,Chicago,Old iPhone,2023-07-19
+949,New York City,Old iPhone,2023-07-19
+55,Chicago,Android,2023-07-19
+352,Chicago,Android,2023-07-19
+979,Albuquerque,Old iPhone,2023-07-19
+212,Indianapolis,New iPhone,2023-07-19
+1000,Albuquerque,Old iPhone,2023-07-19
+108,New York City,Android,2023-07-19
+652,Greater Boston,Android,2023-07-19
+509,New York City,New iPhone,2023-07-20
+596,Greater Boston,Android,2023-07-20
+351,Albuquerque,Old iPhone,2023-07-20
+385,Greater Boston,New iPhone,2023-07-20
+331,New York City,Android,2023-07-20
+422,New York City,Android,2023-07-20
+793,New York City,New iPhone,2023-07-20
+928,Bay Area,Old iPhone,2023-07-20
+642,Chicago,New iPhone,2023-07-20
+316,Bay Area,New iPhone,2023-07-20
+651,Chicago,Android,2023-07-20
+684,Albuquerque,Android,2023-07-20
+249,Bay Area,Android,2023-07-20
+400,Indianapolis,Old iPhone,2023-07-20
+841,Indianapolis,New iPhone,2023-07-20
+996,Greater Boston,Android,2023-07-20
+392,Albuquerque,Old iPhone,2023-07-20
+391,New York City,Android,2023-07-20
+80,Bay Area,New iPhone,2023-07-20
+83,Indianapolis,New iPhone,2023-07-20
+465,Indianapolis,Android,2023-07-20
+211,Bay Area,Old iPhone,2023-07-20
+189,Greater Boston,Old iPhone,2023-07-20
+294,Chicago,New iPhone,2023-07-20
+239,Greater Boston,New iPhone,2023-07-20
+782,Bay Area,Android,2023-07-20
+645,Greater Boston,New iPhone,2023-07-20
+948,Indianapolis,Old iPhone,2023-07-20
+666,Greater Boston,Old iPhone,2023-07-20
+128,Chicago,Android,2023-07-20
+147,New York City,Old iPhone,2023-07-20
+101,Bay Area,New iPhone,2023-07-20
+625,Greater Boston,New iPhone,2023-07-20
+587,Chicago,New iPhone,2023-07-20
+1037,Chicago,Android,2023-07-20
+931,Greater Boston,Android,2023-07-20
+746,Greater Boston,Old iPhone,2023-07-20
+70,Greater Boston,Old iPhone,2023-07-20
+480,Indianapolis,Android,2023-07-20
+186,New York City,Android,2023-07-20
+766,Greater Boston,Android,2023-07-20
+2,Chicago,Old iPhone,2023-07-20
+514,Indianapolis,Android,2023-07-20
+694,New York City,Old iPhone,2023-07-20
+409,Greater Boston,New iPhone,2023-07-20
+82,Bay Area,Android,2023-07-20
+416,Chicago,New iPhone,2023-07-20
+345,Indianapolis,Old iPhone,2023-07-20
+887,Greater Boston,Android,2023-07-20
+34,Albuquerque,New iPhone,2023-07-20
+268,New York City,Android,2023-07-20
+929,Greater Boston,New iPhone,2023-07-20
+847,Chicago,New iPhone,2023-07-20
+770,Albuquerque,Old iPhone,2023-07-21
+58,New York City,Old iPhone,2023-07-21
+59,Indianapolis,Android,2023-07-21
+453,Indianapolis,Android,2023-07-21
+75,Chicago,New iPhone,2023-07-21
+919,Chicago,Old iPhone,2023-07-21
+636,Indianapolis,Android,2023-07-21
+706,Chicago,Android,2023-07-21
+481,Greater Boston,Old iPhone,2023-07-21
+377,Bay Area,New iPhone,2023-07-21
+215,Greater Boston,New iPhone,2023-07-21
+990,Greater Boston,New iPhone,2023-07-21
+835,Indianapolis,New iPhone,2023-07-21
+794,Greater Boston,Old iPhone,2023-07-21
+387,Bay Area,Android,2023-07-21
+288,Albuquerque,New iPhone,2023-07-21
+712,Bay Area,Android,2023-07-21
+839,Greater Boston,Android,2023-07-21
+784,New York City,Old iPhone,2023-07-21
+105,Albuquerque,New iPhone,2023-07-21
+125,Greater Boston,Android,2023-07-21
+665,Chicago,New iPhone,2023-07-21
+46,Indianapolis,Old iPhone,2023-07-21
+262,Indianapolis,Android,2023-07-21
+1040,Chicago,New iPhone,2023-07-21
+178,Chicago,Old iPhone,2023-07-21
+111,Chicago,New iPhone,2023-07-21
+11,New York City,Android,2023-07-21
+859,Chicago,New iPhone,2023-07-21
+171,Indianapolis,Android,2023-07-21
+22,Greater Boston,Android,2023-07-21
+937,Albuquerque,New iPhone,2023-07-21
+518,Albuquerque,New iPhone,2023-07-21
+431,Chicago,Android,2023-07-21
+729,Albuquerque,New iPhone,2023-07-21
+809,Chicago,New iPhone,2023-07-21
+193,Indianapolis,Android,2023-07-21
+1022,Albuquerque,New iPhone,2023-07-21
+773,Bay Area,Android,2023-07-21
+432,Chicago,Android,2023-07-21
+704,Greater Boston,New iPhone,2023-07-21

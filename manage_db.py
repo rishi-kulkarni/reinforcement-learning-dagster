@@ -10,7 +10,7 @@ MODEL = Path(__file__).parent / "./data/wallflower_bonus_bandit.pkl"
 def reset():
     conn = duckdb.connect(str(DATA_DB))
 
-    conn.execute("DELETE FROM public.bonus_description")
+    conn.execute("DELETE FROM public.coupon_offers")
     conn.execute("UPDATE today_date SET today = '2023-07-02'")
 
     Path(MODEL).unlink(missing_ok=True)
